@@ -1,250 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- BASIC SEO -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paush India | Luxury Indian Perfume Brand</title>
-<meta name="description" content="Paush India – Premium luxury perfumes & attars from Kannauj. Long lasting fragrances crafted since 2015. Order on WhatsApp.">
-<meta name="keywords" content="Paush India, luxury perfume, attar, Kannauj perfume, Indian perfume brand">
+<title>Paush India | Luxury Perfume Brand</title>
+
+<!-- SEO -->
+<meta name="description" content="Paush India – Luxury Indian perfume brand from Kannauj. Order premium perfumes via WhatsApp. COD & UPI available.">
+<meta name="keywords" content="Paush India perfume, luxury perfume India, Kannauj attar">
 <meta name="author" content="Paush India">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- GOOGLE INDEX -->
-<meta name="robots" content="index, follow">
+<!-- GOOGLE SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Paush India",
+  "url": "https://paushindia.com",
+  "logo": "IMG_2606.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9151176462",
+    "contactType": "Customer Support"
+  }
+}
+</script>
 
-<!-- SOCIAL PREVIEW -->
-<meta property="og:title" content="Paush India | Luxury Perfumes">
-<meta property="og:description" content="Premium luxury perfumes from Kannauj. Order on WhatsApp.">
-<meta property="og:type" content="website">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="IMG_2606.png">
 
 <style>
-:root{
-  --gold:#D4AF37;
-  --dark:#0a0a0a;
+:root{--gold:#d4af37;--dark:#0b0b0b;}
+body{margin:0;background:var(--dark);color:#fff;font-family:Arial,sans-serif}
+.center{display:flex;flex-direction:column;align-items:center;text-align:center;padding:30px}
+.logo{width:420px;max-width:90%;margin:20px 0}
+.btn{width:280px;padding:15px;margin:10px;border-radius:50px;border:none;font-size:16px;text-decoration:none}
+.whatsapp{background:#25D366;color:#000}
+.instagram{background:#000;color:#fff;border:1px solid var(--gold)}
+.pay{background:linear-gradient(45deg,var(--gold),#f0c14b);color:#000;font-weight:bold}
+.section{max-width:1100px;margin:60px auto;padding:0 15px}
+h2{color:var(--gold)}
+input,select,textarea{
+  width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-body{
-  font-family:'Montserrat',sans-serif;
-  background:var(--dark);
-  color:#fff;
-}
-
-/* HEADER */
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:#000;
-  z-index:999;
-}
-nav{
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 20px;
-}
-.logo img{
-  height:55px;
-}
-nav ul{
-  list-style:none;
-  display:flex;
-  gap:25px;
-}
-nav a{
-  text-decoration:none;
-  color:#fff;
-  font-weight:500;
-}
-nav a:hover{color:var(--gold);}
-
-/* HERO */
-.hero{
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:20px;
-  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-}
-.hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:3.5rem;
-  color:var(--gold);
-}
-.hero p{
-  margin:20px auto;
-  max-width:700px;
-  font-size:1.2rem;
-}
-.btn{
-  display:inline-block;
-  margin:10px;
-  padding:15px 30px;
-  background:var(--gold);
-  color:#000;
-  border-radius:50px;
-  font-weight:600;
-  text-decoration:none;
-}
-.btn:hover{opacity:0.9}
-
-/* SECTION */
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:80px 20px;
-  text-align:center;
-}
-h2{
-  font-family:'Playfair Display',serif;
-  color:var(--gold);
-  font-size:2.5rem;
-  margin-bottom:30px;
-}
-
-/* PRODUCTS */
-.products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
-}
-.card{
-  background:#111;
-  padding:25px;
-  border-radius:20px;
-}
-.card img{
-  width:100%;
-  border-radius:15px;
-}
-.price{
-  color:var(--gold);
-  font-size:1.8rem;
-  margin:10px 0;
-}
-
-/* FOOTER */
-footer{
-  background:#000;
-  padding:40px 20px;
-  text-align:center;
-}
-footer a{
-  color:var(--gold);
-  text-decoration:none;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  padding:15px 20px;
-  border-radius:50px;
-  font-weight:600;
-  text-decoration:none;
-}
+form{background:#111;padding:20px;border-radius:15px}
+footer{border-top:1px solid rgba(212,175,55,.3);padding:20px;text-align:center;font-size:13px;color:#aaa}
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-<nav>
-  <div class="logo">
-    <img src="logo.png" alt="Paush India Logo">
-  </div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#products">Shop</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-</header>
-
 <!-- HERO -->
-<div class="hero" id="home">
-  <div>
-    <h1>Paush India</h1>
-    <p>Luxury Indian Perfume Brand from Kannauj. Long-lasting premium fragrances crafted since 2015.</p>
+<div class="center">
+  <img src="IMG_2606.png" class="logo" alt="Paush India Logo">
+  <p style="letter-spacing:3px;color:var(--gold)">LUXURY • POWER • SIGNATURE</p>
 
-    <!-- WHATSAPP AUTO MESSAGE -->
-    <a class="btn" href="https://wa.me/919151176462?text=Hello%20Paush%20India%2C%20I%20want%20to%20order%20your%20perfumes." target="_blank">
-      Order on WhatsApp
-    </a>
+  <a class="btn whatsapp"
+     href="https://wa.me/919151176462?text=Hello%20Paush%20India%2C%20I%20want%20to%20order"
+     target="_blank">Order on WhatsApp</a>
 
-    <a class="btn" href="https://instagram.com/paushindiaofficial" target="_blank">
-      Instagram
-    </a>
-  </div>
+  <a class="btn pay"
+     href="https://wa.me/919151176462?text=I%20want%20to%20pay%20via%20UPI%20or%20COD"
+     target="_blank">Payment / COD</a>
+
+  <a class="btn instagram"
+     href="https://instagram.com/paushindiaofficial"
+     target="_blank">Instagram</a>
 </div>
 
 <!-- PRODUCTS -->
-<section id="products">
+<div class="section">
 <h2>Signature Fragrances</h2>
-<div class="products">
-
-<div class="card">
-  <img src="perfume1.jpg">
-  <h3>Signature Noir</h3>
-  <p>Oud, sandalwood & spice</p>
-  <div class="price">₹2499</div>
+<ul>
+<li>Signature Noir – Oud & Spice</li>
+<li>Amber Royale – Warm Oriental</li>
+<li>Eternal Rose – Royal Floral</li>
+</ul>
 </div>
 
-<div class="card">
-  <img src="perfume2.jpg">
-  <h3>Eternal Rose</h3>
-  <p>Damask rose & musk</p>
-  <div class="price">₹2199</div>
+<!-- ORDER FORM -->
+<div class="section">
+<h2>Place Order</h2>
+<form onsubmit="sendWhatsApp();return false;">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Mobile Number" required>
+<textarea id="address" placeholder="Full Address" required></textarea>
+<select id="product">
+  <option>Signature Noir</option>
+  <option>Amber Royale</option>
+  <option>Eternal Rose</option>
+</select>
+<select id="payment">
+  <option>Cash on Delivery</option>
+  <option>UPI / Online</option>
+</select>
+<button class="btn whatsapp" type="submit">Confirm on WhatsApp</button>
+</form>
 </div>
 
-<div class="card">
-  <img src="perfume3.jpg">
-  <h3>Amber Royale</h3>
-  <p>Amber, vanilla & patchouli</p>
-  <div class="price">₹2799</div>
-</div>
-
-</div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-<h2>About Paush India</h2>
+<!-- ADDRESS -->
+<div class="section">
+<h2>Address</h2>
 <p>
-Crafted in Kannauj – India’s perfume capital.  
-Paush India blends ancient attar traditions with modern luxury fragrances.
+📍 Kannauj, Uttar Pradesh, India<br>
+📞 +91 9151176462<br>
+📸 @paushindiaofficial
 </p>
-</section>
+</div>
 
-<!-- CONTACT -->
-<section id="contact">
-<h2>Contact Us</h2>
-<p>📍 Kannauj, Uttar Pradesh, India</p>
-<p>📞 WhatsApp: +91 9151176462</p>
-<p>📸 Instagram: <a href="https://instagram.com/paushindiaofficial">@paushindiaofficial</a></p>
-</section>
-
-<!-- FOOTER -->
 <footer>
-<p>© 2026 Paush India – Luxury Indian Perfume Brand</p>
+© 2026 Paush India • Crafted in Kannauj
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/919151176462?text=Hello%20Paush%20India%2C%20I%20want%20to%20order." target="_blank">
-WhatsApp Order
-</a>
+<script>
+function sendWhatsApp(){
+let msg =
+"New Order%0A" +
+"Name: " + name.value + "%0A" +
+"Phone: " + phone.value + "%0A" +
+"Product: " + product.value + "%0A" +
+"Payment: " + payment.value + "%0A" +
+"Address: " + address.value;
+
+window.open("https://wa.me/919151176462?text=" + msg, "_blank");
+}
+
+/*
+AUTO REPLY TEXT (use in WhatsApp Business):
+"Thank you for contacting Paush India 🌸
+Your order request is received.
+Our team will confirm shortly."
+*/
+
+/*
+PAYMENT GATEWAY (Razorpay):
+Integrate Razorpay script here when account ready
+*/
+</script>
 
 </body>
 </html>
