@@ -3,287 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paush India - Premium Perfumes | Luxury Fragrances from Kannuaj </title>
-    <meta name="description" content="Long-lasting premium attars & perfumes from Paush India. Crafted in Farrukhabad & Kannauj since 2015. Shop timeless luxury scents now.">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Paush India – Premium Perfumes | Luxury Fragrances from Kannauj</title>
+    <meta name="description" content="Long-lasting premium attars & perfumes from Paush India. Crafted in Kannauj since 2015. Experience timeless luxury fragrances.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        :root { 
-            --gold: #D4AF37; 
-            --dark: #0a0a0a; 
-            --darker: #000; 
-            --gray: #666; 
-            --light-gray: #ccc;
+        :root {
+            --gold:#D4AF37;
+            --dark:#0a0a0a;
+            --darker:#000;
+            --light:#ccc;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: #fff; overflow-x: hidden; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; letter-spacing: 0.05em; }
-        
-        /* Header with Logo */
-        header { 
-            background: rgba(10,10,10,0.95); 
-            padding: 1.5rem 2rem; 
-            position: fixed; 
-            width: 100%; 
-            top: 0; 
-            z-index: 1000; 
-            backdrop-filter: blur(20px); 
-            border-bottom: 1px solid rgba(212,175,55,0.2);
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Montserrat',sans-serif;background:var(--dark);color:#fff}
+        h1,h2,h3{font-family:'Playfair Display',serif}
+
+        header{
+            position:fixed;
+            top:0;
+            width:100%;
+            background:rgba(10,10,10,0.95);
+            padding:1.2rem 2rem;
+            z-index:1000;
+            border-bottom:1px solid rgba(212,175,55,0.2)
         }
-        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
-        .logo { 
-            font-size: 2rem; 
-            font-weight: 700; 
-            background: linear-gradient(45deg, var(--gold), #f0c14b); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            text-decoration: none; 
-            transition: all 0.3s ease;
+        nav{
+            max-width:1200px;
+            margin:auto;
+            display:flex;
+            justify-content:space-between;
+            align-items:center
         }
-        .logo:hover { transform: scale(1.05); }
-        .nav-links { display: flex; list-style: none; gap: 2.5rem; }
-        .nav-links a { 
-            color: #fff; 
-            text-decoration: none; 
-            font-weight: 500; 
-            position: relative;
-            transition: color 0.3s;
+        .logo-text{
+            font-size:1.8rem;
+            font-weight:700;
+            background:linear-gradient(45deg,var(--gold),#f0c14b);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            text-decoration:none
         }
-        .nav-links a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background: var(--gold); transition: width 0.3s; }
-        .nav-links a:hover::after { width: 100%; }
-        .nav-links a:hover { color: var(--gold); }
-        
-        /* Hero Section - Full Screen Banner */
-        .hero { 
-            height: 100vh; 
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('hero-bg.jpg'); 
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed;
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            padding: 0 2rem; 
-            margin-top: 80px;
+        .nav-links{list-style:none;display:flex;gap:2rem}
+        .nav-links a{color:#fff;text-decoration:none;font-weight:500}
+        .nav-links a:hover{color:var(--gold)}
+
+        /* Center Logo */
+        .center-logo{
+            text-align:center;
+            margin-top:120px;
         }
-        .hero h1 { 
-            font-size: clamp(3rem, 8vw, 6rem); 
-            margin-bottom: 1.5rem; 
-            color: var(--gold); 
-            text-shadow: 0 0 30px rgba(212,175,55,0.5);
-            animation: fadeInUp 1.5s ease;
+        .center-logo img{
+            max-width:220px;
+            height:auto;
         }
-        .hero p { 
-            font-size: clamp(1.1rem, 3vw, 1.5rem); 
-            max-width: 700px; 
-            margin-bottom: 3rem; 
-            opacity: 0.9;
-            animation: fadeInUp 1.5s ease 0.3s both;
+
+        .hero{
+            height:100vh;
+            background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.4)),url('hero-bg.jpg');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:0 2rem
         }
-        .cta { 
-            background: linear-gradient(45deg, var(--gold), #f0c14b); 
-            color: var(--dark); 
-            padding: 1.2rem 3rem; 
-            text-decoration: none; 
-            font-weight: 600; 
-            font-size: 1.2rem;
-            border-radius: 50px; 
-            transition: all 0.4s ease; 
-            box-shadow: 0 10px 30px rgba(212,175,55,0.4);
-            animation: fadeInUp 1.5s ease 0.6s both;
+        .hero h1{
+            font-size:clamp(3rem,7vw,5.5rem);
+            color:var(--gold);
+            margin-bottom:1rem
         }
-        .cta:hover { 
-            transform: translateY(-5px) scale(1.05); 
-            box-shadow: 0 20px 40px rgba(212,175,55,0.6);
+        .hero p{
+            max-width:700px;
+            font-size:1.2rem;
+            opacity:.9;
+            margin-bottom:2rem
         }
-        
-        /* Sections */
-        .section { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
-        .products { background: #111; }
-        .products h2 { 
-            text-align: center; 
-            font-size: clamp(2.5rem, 6vw, 4rem); 
-            margin-bottom: 4rem; 
-            color: var(--gold); 
-            position: relative;
+        .cta{
+            padding:1rem 2.5rem;
+            background:linear-gradient(45deg,var(--gold),#f0c14b);
+            color:#000;
+            text-decoration:none;
+            border-radius:40px;
+            font-weight:600
         }
-        .products h2::after { 
-            content: ''; 
-            display: block; 
-            width: 100px; 
-            height: 3px; 
-            background: var(--gold); 
-            margin: 1rem auto 0;
+
+        .section{padding:6rem 2rem;max-width:1200px;margin:auto}
+        .products{background:#111}
+        .products h2{text-align:center;color:var(--gold);font-size:3rem;margin-bottom:3rem}
+
+        .product-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:2rem
         }
-        .product-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-            gap: 2.5rem; 
+        .product-card{
+            background:rgba(255,255,255,.05);
+            padding:2rem;
+            border-radius:20px;
+            text-align:center;
+            border:1px solid rgba(212,175,55,.15)
         }
-        .product-card { 
-            background: rgba(255,255,255,0.05); 
-            backdrop-filter: blur(10px);
-            padding: 2.5rem 2rem; 
-            border-radius: 20px; 
-            text-align: center; 
-            transition: all 0.4s ease; 
-            border: 1px solid rgba(212,175,55,0.1);
-            position: relative; overflow: hidden;
+        .product-card img{
+            width:100%;
+            height:260px;
+            object-fit:cover;
+            border-radius:15px;
+            margin-bottom:1rem
         }
-        .product-card::before {
-            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(212,175,55,0.1), transparent); transition: left 0.5s;
+        .product-card h3{color:var(--gold);margin-bottom:.5rem}
+        .price{color:var(--gold);font-size:1.8rem;font-weight:700}
+
+        footer{
+            background:var(--darker);
+            text-align:center;
+            padding:2.5rem;
+            border-top:1px solid rgba(212,175,55,.2)
         }
-        .product-card:hover::before { left: 100%; }
-        .product-card:hover { 
-            transform: translateY(-15px); 
-            border-color: var(--gold); 
-            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
-        }
-        .product-card img { 
-            width: 100%; 
-            height: 280px; 
-            object-fit: cover; 
-            border-radius: 15px; 
-            margin-bottom: 1.5rem; 
-            transition: transform 0.4s;
-        }
-        .product-card:hover img { transform: scale(1.05); }
-        .product-card h3 { 
-            font-size: 1.8rem; 
-            margin-bottom: 1rem; 
-            color: var(--gold);
-        }
-        .product-card p { color: var(--light-gray); margin-bottom: 1.5rem; }
-        .price { 
-            font-size: 2.2rem; 
-            font-weight: 700; 
-            color: var(--gold);
-        }
-        
-        /* About */
-        #about { text-align: center; }
-        #about h2 { font-size: clamp(2.5rem, 6vw, 4rem); color: var(--gold); margin-bottom: 2rem; }
-        #about p { font-size: 1.3rem; max-width: 800px; margin: 0 auto; opacity: 0.9; }
-        
-        /* Footer */
-        footer { 
-            background: var(--darker); 
-            text-align: center; 
-            padding: 3rem 2rem; 
-            border-top: 1px solid rgba(212,175,55,0.2);
-        }
-        footer p { opacity: 0.7; }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        /* Mobile */
-        @media (max-width: 768px) { 
-            .nav-links { display: none; } 
-            .hero { margin-top: 70px; background-attachment: scroll; }
-            .section { padding: 4rem 1rem; }
+
+        @media(max-width:768px){
+            .nav-links{display:none}
+            .center-logo{margin-top:100px}
         }
     </style>
-</head>
-<body><!DOCTYPE html>
-<html>
-<head>
-  <title>Paush India – Luxury Indian Perfume Brand</title>
 </head>
 
 <body>
 
-  <!-- LOGO START -->
-  <div style="text-align:center; margin-top:40px;">
-    <img src="logo.png" alt="Paush India Logo" style="max-width:220px; height:auto;">
-  </div>
-  <!-- LOGO END -->
+<!-- CENTER LOGO -->
+<div class="center-logo">
+    <img src="logo.png" alt="Paush India Logo">
+</div>
 
-  <h1 style="text-align:center; margin-top:20px;">
-    Paush India
-  </h1>
+<header>
+    <nav>
+        <a href="#" class="logo-text">PAUSH INDIA</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <p style="text-align:center;">
-    Luxury Indian perfume brand crafting premium long-lasting fragrances.
-  </p>
+<section id="home" class="hero">
+    <h1>Timeless Luxury from Kannauj</h1>
+    <p>Premium attars & perfumes crafted with rare essences since 2015.</p>
+    <a href="#products" class="cta">Shop Signature Collection</a>
+</section>
 
-</body>
-</html>
-    <!-- Header & Logo -->
-    <header>
-        <nav>
-            <a href="#home" class="logo">PAUSH INDIA</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Shop</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Timeless Luxury from Kannuaj</h1>
-        <p>Premium attars & perfumes crafted with rare essences since 2015. Experience power, elegance & long-lasting scents that define exclusivity.</p>
-        <a href="#products" class="cta">Shop Signature Collection</a>
-    </section>
-    
-    <!-- Products -->
-    <section id="products" class="products section">
-        <h2>Signature Fragrances</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="perfume1.jpg" alt="Signature Noir - Woody Oriental">
-                <h3>Signature Noir</h3>
-                <p>Deep oud, sandalwood & spice. Bold intensity for 12+ hours.</p>
-                <div class="price">₹2,499</div>
-            </div>
-            <div class="product-card">
-                <img src="perfume2.jpg" alt="Eternal Rose Attar">
-                <h3>Eternal Rose</h3>
-                <p>Damask rose, saffron & musk. Timeless floral masterpiece.</p>
-                <div class="price">₹2,199</div>
-            </div>
-            <div class="product-card">
-                <img src="perfume3.jpg" alt="Amber Royale">
-                <h3>Amber Royale</h3>
-                <p>Warm amber, vanilla & patchouli. Seductive oriental warmth.</p>
-                <div class="price">₹2,799</div>
-            </div>
+<section id="products" class="products section">
+    <h2>Signature Fragrances</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="perfume1.jpg">
+            <h3>Signature Noir</h3>
+            <p>Bold oud & spice blend</p>
+            <div class="price">₹2,499</div>
         </div>
-    </section>
-    
-    <!-- About -->
-    <section id="about" class="section">
-        <h2>Crafted in India's Perfume Capital</h2>
-        <p>Paush India blends Kannauj's ancient attar tradition with Kannuaj's spiritual essence. Skin-friendly, alcohol-free luxury for modern connoisseurs.</p>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Paush India. Premium Perfumes from Kannuaj, Uttar Pradesh. | Instagram: @paushindia</p>
-    </footer>
-    
-    <script>
-        // Smooth scrolling & mobile nav toggle
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault(); 
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-        
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            document.querySelector('header').style.background = 
-                `rgba(10,10,10,${Math.min(0.95, 0.3 + window.scrollY / 500)})`;
-        });
-    </script>
+        <div class="product-card">
+            <img src="perfume2.jpg">
+            <h3>Eternal Rose</h3>
+            <p>Damask rose & musk</p>
+            <div class="price">₹2,199</div>
+        </div>
+        <div class="product-card">
+            <img src="perfume3.jpg">
+            <h3>Amber Royale</h3>
+            <p>Warm amber & vanilla</p>
+            <div class="price">₹2,799</div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2 style="color:var(--gold);text-align:center;">About Paush India</h2>
+    <p style="max-width:800px;margin:1rem auto;text-align:center;opacity:.9">
+        Paush India blends the heritage of Kannauj with modern luxury perfumery.
+        Each fragrance is crafted for elegance, power and long-lasting impact.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Paush India | Luxury Perfumes from Kannauj, India</p>
+</footer>
+
 </body>
 </html>
