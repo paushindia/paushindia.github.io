@@ -1,384 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<!-- ======================================================
-     PAUSH INDIA – LUXURY PERFUME WEBSITE
-     Crafted for premium branding & WhatsApp selling
-====================================================== -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Paush India | Luxury Perfumes from Kannauj</title>
+<title>Paush India – Luxury Perfume Brand | Premium Fragrances</title>
 
-<meta name="description" content="Paush India – Luxury Indian perfumes & attars from Kannauj. Premium long-lasting fragrances at ₹699. Order via WhatsApp.">
-<meta name="keywords" content="Paush India perfume, Kannauj perfume, luxury perfume india, attar brand">
+<meta name="description" content="Paush India – Luxury Indian perfume brand. Premium long-lasting fragrances inspired by Kannauj. Order via WhatsApp.">
+<meta name="keywords" content="Paush India, luxury perfume, Indian perfume brand, Kannauj attar, premium perfume">
 <meta name="author" content="Paush India">
 
-<link rel="icon" href="IMG_2606.png">
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- ================= GOOGLE SCHEMA ================= -->
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"Organization",
- "name":"Paush India",
- "url":"https://paushindia.com",
- "logo":"IMG_2606.png",
- "sameAs":["https://instagram.com/paushindiaofficial"],
- "contactPoint":{
-   "@type":"ContactPoint",
-   "telephone":"+91-9151176462",
-   "contactType":"customer support"
- }
-}
-</script>
-
-<!-- ================= STYLES ================= -->
 <style>
-
-/* ================= ROOT COLORS ================= */
-:root{
-  --gold:#d4af37;
-  --dark:#0a0a0a;
-  --black:#000;
-  --gray:#999;
-}
-
-/* ================= GLOBAL RESET ================= */
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-  font-family: 'Arial', sans-serif;
-  background:var(--dark);
-  color:#fff;
-  line-height:1.6;
+    font-family:'Montserrat',sans-serif;
+    background:#0a0a0a;
+    color:#fff;
 }
 
-/* ================= HEADER ================= */
+/* LOGO SECTION */
+.logo-section{
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#000;
+}
+
+.logo-section img{
+    width:420px;
+    max-width:90%;
+}
+
+.logo-section h1{
+    margin-top:20px;
+    font-family:'Playfair Display',serif;
+    letter-spacing:4px;
+    color:#d4af37;
+}
+
+/* HEADER */
 header{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(0,0,0,0.9);
-  border-bottom:1px solid rgba(212,175,55,.3);
-  z-index:1000;
+    position:sticky;
+    top:0;
+    background:#000;
+    padding:15px 0;
+    border-bottom:1px solid #d4af3733;
 }
 
 nav{
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
 }
 
 nav a{
-  color:#fff;
-  text-decoration:none;
-  margin:0 15px;
-  font-weight:600;
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
 }
 
 nav a:hover{
-  color:var(--gold);
+    color:#d4af37;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 .hero{
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  flex-direction:column;
-  background:
-    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url('p1.jpg');
-  background-size:cover;
-  background-position:center;
-  padding-top:120px;
+    padding:80px 20px;
+    text-align:center;
+    background:linear-gradient(to bottom,#000,#111);
 }
 
-.hero img{
-  width:420px;
-  max-width:90%;
-}
-
-.hero h1{
-  font-size:48px;
-  color:var(--gold);
-  margin-top:20px;
+.hero h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    color:#d4af37;
 }
 
 .hero p{
-  max-width:700px;
-  margin:20px;
-  color:#ddd;
+    max-width:700px;
+    margin:20px auto;
+    opacity:0.9;
 }
 
-/* ================= BUTTONS ================= */
-.btn{
-  padding:15px 35px;
-  margin:10px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-  display:inline-block;
-}
-
-.btn-gold{
-  background:linear-gradient(45deg,var(--gold),#f0c14b);
-  color:#000;
-}
-
-.btn-wa{
-  background:#25D366;
-  color:#000;
-}
-
-.btn:hover{
-  transform:scale(1.05);
-}
-
-/* ================= SECTION ================= */
-.section{
-  max-width:1200px;
-  margin:80px auto;
-  padding:0 20px;
-}
-
-.section h2{
-  text-align:center;
-  color:var(--gold);
-  font-size:38px;
-  margin-bottom:40px;
-}
-
-/* ================= PRODUCTS ================= */
+/* PRODUCTS */
 .products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
+    padding:80px 20px;
+    background:#111;
 }
 
-.card{
-  background:#111;
-  border-radius:20px;
-  overflow:hidden;
-  border:1px solid rgba(212,175,55,.2);
-  transition:.4s;
+.products h2{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    color:#d4af37;
+    margin-bottom:50px;
 }
 
-.card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 20px 40px rgba(0,0,0,.6);
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    max-width:1100px;
+    margin:auto;
 }
 
-.card img{
-  width:100%;
-  height:300px;
-  object-fit:cover;
+.product{
+    background:#000;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    border:1px solid #d4af3722;
 }
 
-.card-body{
-  padding:20px;
-  text-align:center;
+.product img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
 }
 
-.card-body h3{
-  color:var(--gold);
-  margin-bottom:10px;
+.product h3{
+    margin:15px 0;
+    color:#d4af37;
 }
 
 .price{
-  font-size:26px;
-  color:var(--gold);
-  margin:10px 0;
+    font-size:26px;
+    font-weight:bold;
+    margin-bottom:15px;
 }
 
-.card-body p{
-  color:#ccc;
+.whatsapp-btn{
+    display:inline-block;
+    background:#25D366;
+    color:#000;
+    padding:12px 25px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
 }
 
-.order-btn{
-  margin-top:15px;
+/* ABOUT */
+.about{
+    padding:80px 20px;
+    text-align:center;
 }
 
-/* ================= ORDER FORM ================= */
-form{
-  background:#111;
-  padding:30px;
-  border-radius:20px;
+.about h2{
+    font-family:'Playfair Display',serif;
+    color:#d4af37;
+    margin-bottom:20px;
 }
 
-input,select,textarea{
-  width:100%;
-  padding:12px;
-  margin:10px 0;
-  border-radius:8px;
-  border:none;
+.about p{
+    max-width:800px;
+    margin:auto;
+    opacity:0.9;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 footer{
-  background:#000;
-  text-align:center;
-  padding:25px;
-  border-top:1px solid rgba(212,175,55,.2);
-  color:#aaa;
+    background:#000;
+    padding:40px 20px;
+    text-align:center;
+    border-top:1px solid #d4af3733;
 }
 
-/* ================= MOBILE ================= */
-@media(max-width:768px){
-  .hero h1{font-size:34px}
+footer a{
+    color:#d4af37;
+    text-decoration:none;
 }
 
+/* FLOATING WHATSAPP */
+.floating-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:24px;
+    text-decoration:none;
+    color:#000;
+}
 </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- LOGO -->
+<section class="logo-section">
+    <img src="assets/logo.png" alt="Paush India Logo">
+    <h1>PAUSH INDIA</h1>
+</section>
+
+<!-- NAV -->
 <header>
 <nav>
-  <strong style="color:var(--gold)">PAUSH INDIA</strong>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#shop">Shop</a>
-    <a href="#order">Order</a>
-    <a href="#contact">Contact</a>
-  </div>
+    <a href="#">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#about">About</a>
+    <a href="https://instagram.com/paushindiaofficial" target="_blank">Instagram</a>
 </nav>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="home">
-<img src="IMG_2606.png">
-<h1>Luxury Perfumes from Kannauj</h1>
-<p>Signature fragrances crafted for power, elegance & long-lasting impact.</p>
-
-<a class="btn btn-gold" href="#shop">Shop Now</a>
-<a class="btn btn-wa"
-   href="https://wa.me/919151176462?text=Hello%20Paush%20India%20I%20want%20to%20order">
-   WhatsApp Order
-</a>
+<!-- HERO -->
+<section class="hero">
+    <h2>Luxury Perfumes Crafted in India</h2>
+    <p>Premium long-lasting fragrances inspired by Kannauj. Pure, bold & unforgettable.</p>
 </section>
 
-<!-- ================= SHOP ================= -->
-<section class="section" id="shop">
-<h2>Signature Collection</h2>
+<!-- PRODUCTS -->
+<section class="products" id="products">
+<h2>Our Signature Perfumes</h2>
 
-<div class="products">
+<div class="product-grid">
 
-<!-- PRODUCT 1 -->
-<div class="card">
-<img src="p1.jpg">
-<div class="card-body">
-<h3>Signature Noir</h3>
-<p>Oud • Spice • Power</p>
-<div class="price">₹699</div>
-<a class="btn btn-wa order-btn"
-href="https://wa.me/919151176462?text=Order%20Signature%20Noir%20₹699">
-Order Now</a>
-</div>
+<div class="product">
+    <img src="assets/perfume1.jpg">
+    <h3>Royal Oud</h3>
+    <div class="price">₹699</div>
+    <a class="whatsapp-btn" href="https://wa.me/919151176462?text=I want to order Royal Oud Perfume">Order on WhatsApp</a>
 </div>
 
-<!-- PRODUCT 2 -->
-<div class="card">
-<img src="p2.jpg">
-<div class="card-body">
-<h3>Amber Royale</h3>
-<p>Warm • Oriental • Royal</p>
-<div class="price">₹699</div>
-<a class="btn btn-wa order-btn"
-href="https://wa.me/919151176462?text=Order%20Amber%20Royale%20₹699">
-Order Now</a>
-</div>
+<div class="product">
+    <img src="assets/perfume2.jpg">
+    <h3>Amber Musk</h3>
+    <div class="price">₹699</div>
+    <a class="whatsapp-btn" href="https://wa.me/919151176462?text=I want to order Amber Musk Perfume">Order on WhatsApp</a>
 </div>
 
-<!-- PRODUCT 3 -->
-<div class="card">
-<img src="p3.jpg">
-<div class="card-body">
-<h3>Eternal Rose</h3>
-<p>Floral • Luxury • Soft</p>
-<div class="price">₹699</div>
-<a class="btn btn-wa order-btn"
-href="https://wa.me/919151176462?text=Order%20Eternal%20Rose%20₹699">
-Order Now</a>
-</div>
-</div>
-
-<!-- PRODUCT 4 -->
-<div class="card">
-<img src="p4.jpg">
-<div class="card-body">
-<h3>Royal Musk</h3>
-<p>Deep • Masculine • Bold</p>
-<div class="price">₹699</div>
-<a class="btn btn-wa order-btn"
-href="https://wa.me/919151176462?text=Order%20Royal%20Musk%20₹699">
-Order Now</a>
-</div>
+<div class="product">
+    <img src="assets/perfume3.jpg">
+    <h3>White Rose</h3>
+    <div class="price">₹699</div>
+    <a class="whatsapp-btn" href="https://wa.me/919151176462?text=I want to order White Rose Perfume">Order on WhatsApp</a>
 </div>
 
 </div>
 </section>
 
-<!-- ================= ORDER ================= -->
-<section class="section" id="order">
-<h2>Place Order</h2>
-
-<form onsubmit="sendWA();return false;">
-<input id="name" placeholder="Your Name" required>
-<input id="phone" placeholder="Phone Number" required>
-<textarea id="address" placeholder="Full Address" required></textarea>
-
-<select id="product">
-<option>Signature Noir</option>
-<option>Amber Royale</option>
-<option>Eternal Rose</option>
-<option>Royal Musk</option>
-</select>
-
-<button class="btn btn-wa">Confirm on WhatsApp</button>
-</form>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section class="section" id="contact">
-<h2>Contact</h2>
-<p style="text-align:center">
-📍 Kannauj, Uttar Pradesh<br>
-📞 +91 9151176462<br>
-📸 Instagram: @paushindiaofficial
+<!-- ABOUT -->
+<section class="about" id="about">
+<h2>About Paush India</h2>
+<p>
+Paush India is a premium Indian perfume brand delivering luxury fragrances crafted with passion.
+Inspired by Kannauj’s heritage, our perfumes are long-lasting, bold and unforgettable.
 </p>
 </section>
 
+<!-- FOOTER -->
 <footer>
-© 2026 Paush India • Luxury Perfumes from Kannauj
+<p>© 2026 Paush India</p>
+<p>
+Instagram: <a href="https://instagram.com/paushindiaofficial" target="_blank">@paushindiaofficial</a>
+</p>
 </footer>
 
-<!-- ================= SCRIPT ================= -->
-<script>
-function sendWA(){
-let msg =
-"New Order%0A" +
-"Name: "+name.value+"%0A"+
-"Phone: "+phone.value+"%0A"+
-"Product: "+product.value+"%0A"+
-"Address: "+address.value;
-
-window.open("https://wa.me/919151176462?text="+msg,"_blank");
-}
-</script>
+<!-- FLOATING WHATSAPP -->
+<a class="floating-whatsapp" href="https://wa.me/919151176462" target="_blank">💬</a>
 
 </body>
 </html>
