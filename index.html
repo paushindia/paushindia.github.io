@@ -1,84 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>Paush India – Luxury Perfume House</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Paush India® – Luxury Indian perfume house crafted for royalty, dominance and elite presence.">
-
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Paush India - Premium Perfumes from Kannauj Since 2015</title>
+    <meta name="description" content="Luxury long-lasting alcohol-free perfumes. Skin-friendly fragrances from Kannauj. Shop Paush India: Sheer Love, Sensual, Poison, Leau Dissey. WhatsApp orders.">
+    <meta name="keywords" content="Paush India perfumes, Kannauj attar, luxury fragrance, alcohol-free perfume">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css"> <!-- Fixed: Assets CSS -->
+    <link rel="icon" href="logo.png">
 </head>
-
 <body>
+    <!-- Fixed Header: Sticky + Mobile Menu -->
+    <header id="header">
+        <nav class="nav">
+            <img src="logo.png" alt="Paush India Logo" class="logo" onerror="this.src='https://via.placeholder.com/150x50/000/FFD700?text=Paush'">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Order</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
 
-<!-- HEADER -->
-<header class="header">
-    <div class="logo-box">
-        <img src="assets/images/logo.png" alt="Paush India Logo">
-    </div>
-
-    <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">Fragrances</a>
-        <a href="https://www.instagram.com/paushindia" target="_blank">Instagram</a>
-    </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>PAUSH INDIA<br><span>PERFUME HOUSE</span></h1>
-
-        <p>
-            Paush India® is not just a fragrance —  
-            it is an identity of power, dominance  
-            and elite luxury.
-        </p>
-
-        <a class="btn" href="https://wa.me/919151176462">
-            Order on WhatsApp
-        </a>
-    </div>
-</section>
-
-<!-- PRODUCTS -->
-<section class="products">
-    <h2>Our Signature Fragrances</h2>
-
-    <div class="product-grid">
-
-        <div class="product-card">
-            <img src="assets/images/perfume1.jpg">
-            <h3>Royal Oud</h3>
-            <p>₹699</p>
+    <!-- Hero Section Fixed: Fullscreen + Parallax -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Paush India</h1>
+            <p>Premium Perfumes Crafted in Kannauj Since 2015<br>Long-Lasting, Alcohol-Free, Skin-Friendly</p>
+            <a href="#products" class="cta-btn">Shop Now</a>
         </div>
+        <img src="hero-bg.jpg" alt="Luxury Perfume" class="hero-bg" onerror="this.src='https://images.unsplash.com/photo-1574169208507-84376144848b?w=1920&auto=format&fit=crop'"> <!-- Fallback -->
+    </section>
 
-        <div class="product-card">
-            <img src="assets/images/perfume2.jpg">
-            <h3>Elite Musk</h3>
-            <p>₹699</p>
+    <!-- Products Grid Fixed: Hover Glow + Prices -->
+    <section id="products" class="products">
+        <h2>Best Sellers</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="sheer-love.jpg" alt="Sheer Love" onerror="this.src='https://images.unsplash.com/photo-1611606066621-8b5f54bdb5ea?w=400&auto=format&fit=crop'">
+                <h3>Sheer Love</h3>
+                <p>₹699</p>
+                <button onclick="order('Sheer Love ₹699')">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="sensual.jpg" alt="Sensual" onerror="this.src='https://images.unsplash.com/photo-1598836870558-42b3d80ae9b2?w=400&auto=format&fit=crop'">
+                <h3>Sensual</h3>
+                <p>₹699</p>
+                <button onclick="order('Sensual ₹699')">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="poison.jpg" alt="Poison" onerror="this.src='https://images.unsplash.com/photo-1571771894821-ce9b6c119482?w=400&auto=format&fit=crop'">
+                <h3>Poison</h3>
+                <p>₹699</p>
+                <button onclick="order('Poison ₹699')">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="leau-dissey.jpg" alt="Leau Dissey" onerror="this.src='https://images.unsplash.com/photo-1612688598177-6bb7b563f2c3?w=400&auto=format&fit=crop'">
+                <h3>Leau Dissey</h3>
+                <p>₹699</p>
+                <button onclick="order('Leau Dissey ₹699')">Order</button>
+            </div>
         </div>
+    </section>
 
-        <div class="product-card">
-            <img src="assets/images/perfume3.jpg">
-            <h3>Imperial Amber</h3>
-            <p>₹699</p>
-        </div>
+    <!-- About Fixed: USP -->
+    <section id="about" class="about">
+        <h2>Why Paush India?</h2>
+        <ul>
+            <li>Kannauj Manufactured (Perfume Capital)</li>
+            <li>Alcohol-Free & Skin-Safe</li>
+            <li>Long-Lasting 8+ Hours</li>
+            <li>COD + UPI Available</li>
+        </ul>
+    </section>
 
-    </div>
-</section>
+    <!-- UPI QR Fixed -->
+    <section id="contact" class="upi">
+        <h2>Pay via UPI</h2>
+        <img src="upi-qr.jpg" alt="UPI QR" onerror="this.src='https://via.placeholder.com/300x300/000/00FF00?text=UPI+QR'">
+        <p>Scan & Pay | COD Also Available</p>
+    </section>
 
-<!-- UPI QR -->
-<section class="upi">
-    <h2>Pay via UPI</h2>
-    <img src="assets/images/upi-qr.jpg" alt="UPI QR Code">
-</section>
+    <!-- Fixed Footer + WhatsApp -->
+    <footer>
+        <p>&copy; 2025 Paush India. Farrukhabad Marketing | Made with ❤️ in India</p>
+    </footer>
+    <a href="#" class="whatsapp" id="whatsapp">+</a>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2026 Paush India | By Piyush Perfumers</p>
-</footer>
+    <!-- JS Fixed: WhatsApp Auto + Smooth Scroll + Mobile Menu -->
+    <script>
+        // WhatsApp Order Function
+        function order(product) {
+            const msg = `Hi, I want to order ${product}. Available? COD/UPI.`;
+            window.open(`https://wa.me/9151176462?text=${encodeURIComponent(msg)}`, '_blank');
+        }
 
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+            });
+        });
+
+        // Mobile Menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').style.background = `rgba(10,10,10,${Math.min(0.95, 0.3 + window.scrollY / 500)})`;
+        });
+    </script>
 </body>
 </html>
+
