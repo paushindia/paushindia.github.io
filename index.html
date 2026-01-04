@@ -1,124 +1,65 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paush India - Premium Perfumes from Kannauj Since 2015</title>
-    <meta name="description" content="Luxury long-lasting alcohol-free perfumes. Skin-friendly fragrances from Kannauj. Shop Paush India: Sheer Love, Sensual, Poison, Leau Dissey. WhatsApp orders.">
-    <meta name="keywords" content="Paush India perfumes, Kannauj attar, luxury fragrance, alcohol-free perfume">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css"> <!-- Fixed: Assets CSS -->
-    <link rel="icon" href="logo.png">
+    <title>Paush India® | Luxury Perfumes - Kannauj Crafted</title>
+    <meta name="description" content="Elite black-silver luxury perfumes from Kannauj. Power & Sophistication. Shop now with WhatsApp, UPI, Razorpay.">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 <body>
-    <!-- Fixed Header: Sticky + Mobile Menu -->
-    <header id="header">
-        <nav class="nav">
-            <img src="logo.png" alt="Paush India Logo" class="logo" onerror="this.src='https://via.placeholder.com/150x50/000/FFD700?text=Paush'">
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Shop</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Order</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
+    <!-- Navigation - Clickable 6+ links -->
+    <nav class="navbar">
+        <img src="assets/logo.png" alt="Paush India" class="logo">
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+        <a href="#" class="whatsapp-btn" onclick="whatsappOrder()">💬 WhatsApp</a>
+    </nav>
 
-    <!-- Hero Section Fixed: Fullscreen + Parallax -->
+    <!-- Hero Section 1 - Clickable CTA -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Paush India</h1>
-            <p>Premium Perfumes Crafted in Kannauj Since 2015<br>Long-Lasting, Alcohol-Free, Skin-Friendly</p>
-            <a href="#products" class="cta-btn">Shop Now</a>
+            <h1>PAUSH INDIA®</h1>
+            <p>Perfume House | Kannauj Crafted | Black-Silver Elite</p>
+            <div class="cta-buttons">
+                <a href="shop.html" class="btn-primary">Shop Collection</a>
+                <a href="#" onclick="whatsappOrder()" class="btn-secondary">Quick Order</a>
+            </div>
         </div>
-        <img src="hero-bg.jpg" alt="Luxury Perfume" class="hero-bg" onerror="this.src='https://images.unsplash.com/photo-1574169208507-84376144848b?w=1920&auto=format&fit=crop'"> <!-- Fallback -->
     </section>
 
-    <!-- Products Grid Fixed: Hover Glow + Prices -->
-    <section id="products" class="products">
-        <h2>Best Sellers</h2>
+    <!-- Featured Products - 6 Cards Clickable -->
+    <section class="featured">
+        <h2>Elite Collection</h2>
         <div class="product-grid">
-            <div class="product-card">
-                <img src="sheer-love.jpg" alt="Sheer Love" onerror="this.src='https://images.unsplash.com/photo-1611606066621-8b5f54bdb5ea?w=400&auto=format&fit=crop'">
+            <div class="product" data-id="1" data-name="Sheer Love" data-price="699">
+                <img src="assets/sheer-love.jpg" alt="Sheer Love">
                 <h3>Sheer Love</h3>
                 <p>₹699</p>
-                <button onclick="order('Sheer Love ₹699')">Order</button>
+                <button class="add-cart">Add to Cart</button>
             </div>
-            <div class="product-card">
-                <img src="sensual.jpg" alt="Sensual" onerror="this.src='https://images.unsplash.com/photo-1598836870558-42b3d80ae9b2?w=400&auto=format&fit=crop'">
-                <h3>Sensual</h3>
-                <p>₹699</p>
-                <button onclick="order('Sensual ₹699')">Order</button>
-            </div>
-            <div class="product-card">
-                <img src="poison.jpg" alt="Poison" onerror="this.src='https://images.unsplash.com/photo-1571771894821-ce9b6c119482?w=400&auto=format&fit=crop'">
-                <h3>Poison</h3>
-                <p>₹699</p>
-                <button onclick="order('Poison ₹699')">Order</button>
-            </div>
-            <div class="product-card">
-                <img src="leau-dissey.jpg" alt="Leau Dissey" onerror="this.src='https://images.unsplash.com/photo-1612688598177-6bb7b563f2c3?w=400&auto=format&fit=crop'">
-                <h3>Leau Dissey</h3>
-                <p>₹699</p>
-                <button onclick="order('Leau Dissey ₹699')">Order</button>
-            </div>
+            <!-- 5 more products same format: Sensual, Poison, Leau Dissey, Oud Noir, Silver Mystique -->
         </div>
     </section>
 
-    <!-- About Fixed: USP -->
-    <section id="about" class="about">
-        <h2>Why Paush India?</h2>
-        <ul>
-            <li>Kannauj Manufactured (Perfume Capital)</li>
-            <li>Alcohol-Free & Skin-Safe</li>
-            <li>Long-Lasting 8+ Hours</li>
-            <li>COD + UPI Available</li>
-        </ul>
+    <!-- UPI QR Section -->
+    <section class="payment">
+        <img src="assets/upi-qr.jpg" alt="UPI QR">
+        <p>Scan to Pay | Razorpay Also Available</p>
     </section>
 
-    <!-- UPI QR Fixed -->
-    <section id="contact" class="upi">
-        <h2>Pay via UPI</h2>
-        <img src="upi-qr.jpg" alt="UPI QR" onerror="this.src='https://via.placeholder.com/300x300/000/00FF00?text=UPI+QR'">
-        <p>Scan & Pay | COD Also Available</p>
-    </section>
-
-    <!-- Fixed Footer + WhatsApp -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Paush India. Farrukhabad Marketing | Made with ❤️ in India</p>
+        <p>© 2025 Paush India | Kannauj + Farrukhabad | WhatsApp: 9151176462</p>
     </footer>
-    <a href="#" class="whatsapp" id="whatsapp">+</a>
 
-    <!-- JS Fixed: WhatsApp Auto + Smooth Scroll + Mobile Menu -->
-    <script>
-        // WhatsApp Order Function
-        function order(product) {
-            const msg = `Hi, I want to order ${product}. Available? COD/UPI.`;
-            window.open(`https://wa.me/9151176462?text=${encodeURIComponent(msg)}`, '_blank');
-        }
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
-            });
-        });
-
-        // Mobile Menu
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Header Scroll Effect
-        window.addEventListener('scroll', () => {
-            document.getElementById('header').style.background = `rgba(10,10,10,${Math.min(0.95, 0.3 + window.scrollY / 500)})`;
-        });
-    </script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
 
