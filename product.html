@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Product | Paush India</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{background:#0a0a0a;color:#fff;font-family:Arial;padding:20px}
-img{width:100%;max-width:400px;border-radius:20px}
-.price{color:#d4af37;font-size:28px}
-.btn{background:#25D366;color:#000;padding:15px 30px;border-radius:40px;text-decoration:none}
-</style>
+  <title>Product – Paush India</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
 
-<h1 id="name"></h1>
-<img src="assets/p1.jpg">
-<p class="price">₹699</p>
-<p>Premium long-lasting luxury fragrance.</p>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">PAUSH INDIA</div>
+    </nav>
+  </div>
+</header>
 
-<a id="order" class="btn">Order on WhatsApp</a>
+<section>
+  <div class="container">
+    <h2>Royal Oud</h2>
+    <p>Deep, bold & long-lasting luxury fragrance.</p>
+    <p><b>Price:</b> ₹1999</p>
+    <a href="order.html" class="btn">Order Now</a>
+  </div>
+</section>
 
-<script>
-const p = new URLSearchParams(window.location.search).get("name");
-document.getElementById("name").innerText = p;
-document.getElementById("order").href =
-"https://wa.me/919151176462?text=I want to order "+p+" perfume";
-</script>
-
+<footer>© Paush India</footer>
 </body>
 </html>
