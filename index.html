@@ -3,63 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paush India® | Luxury Perfumes - Kannauj Crafted</title>
-    <meta name="description" content="Elite black-silver luxury perfumes from Kannauj. Power & Sophistication. Shop now with WhatsApp, UPI, Razorpay.">
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <title>Paush India® | Elite Black-Silver Perfumes</title>
+    <meta name="description" content="Kannauj crafted luxury. Sheer Love, Sensual, Poison ₹699. WhatsApp instant order.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* CLEAN BLACK-SILVER - NO BREAKS */
+        :root{--bg:#0a0a0a;--silver:#c0c0c0;--accent:#b0b0b0;}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--silver);line-height:1.6;overflow-x:hidden;}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+        
+        /* Header Fixed */
+        header{position:fixed;top:0;width:100%;background:rgba(10,10,10,0.95);backdrop-filter:blur(20px);z-index:100;padding:1rem 0;border-bottom:1px solid var(--silver);}
+        nav{display:flex;justify-content:space-between;align-items:center;}
+        .logo{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--silver);text-decoration:none;}
+        .nav-links{display:flex;gap:2rem;list-style:none;}
+        .nav-links a{color:var(--silver);text-decoration:none;font-weight:500;transition:color 0.3s;}
+        .nav-links a:hover{color:var(--accent);}
+        
+        /* Hero Perfect Spacing */
+        .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,rgba(10,10,10,0.9),rgba(30,30,30,0.9)),url('image/svg+xml;base64,...');padding-top:80px;}
+        .hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,8vw,6rem);color:var(--silver);margin-bottom:1rem;text-shadow:0 4px 20px rgba(0,0,0,0.8);}
+        .hero p{font-size:1.3rem;max-width:600px;margin:0 auto 2rem;line-height:1.6;}
+        .btn{display:inline-block;padding:1rem 2.5rem;background:var(--silver);color:#000;border-radius:50px;font-weight:500;text-decoration:none;transition:all 0.3s;margin:0 0.5rem;}
+        .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(192,192,192,0.4);}
+        
+        /* Products Clean Grid */
+        .products{padding:6rem 0;}
+        .products h2{text-align:center;font-size:2.5rem;margin-bottom:4rem;color:var(--silver);}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;}
+        .card{background:rgba(255,255,255,0.03);padding:2rem;border-radius:20px;text-align:center;border:1px solid rgba(192,192,192,0.1);transition:all 0.3s;}
+        .card:hover{transform:translateY(-10px);background:rgba(255,255,255,0.05);box-shadow:0 20px 40px rgba(0,0,0,0.5);}
+        .card img{width:100%;height:220px;object-fit:cover;border-radius:15px;margin-bottom:1rem;}
+        .card h3{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:0.5rem;}
+        .price{font-size:1.8rem;color:var(--accent);font-weight:700;}
+        .add-cart,.whatsapp-push{padding:0.8rem 2rem;background:var(--silver);color:#000;border:none;border-radius:25px;cursor:pointer;font-weight:500;margin:0.5rem;transition:0.3s;}
+        .add-cart:hover,.whatsapp-push:hover{box-shadow:0 5px 20px rgba(192,192,192,0.4);}
+        
+        /* QR Section */
+        .qr-section{padding:6rem 0;text-align:center;}
+        .qr-section img{max-width:250px;border-radius:15px;box-shadow:0 15px 30px rgba(0,0,0,0.6);}
+        
+        /* Footer */
+        footer{padding:3rem 0;text-align:center;border-top:1px solid var(--silver);}
+        
+        /* Mobile Perfect */
+        @media(max-width:768px){
+            .nav-links{display:none;}
+            .hero{padding-top:100px;}
+            .grid{gap:1.5rem;}
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation - Clickable 6+ links -->
-    <nav class="navbar">
-        <img src="assets/logo.png" alt="Paush India" class="logo">
-        <ul class="nav-links">
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
-        </ul>
-        <div class="hamburger">☰</div>
-        <a href="#" class="whatsapp-btn" onclick="whatsappOrder()">💬 WhatsApp</a>
-    </nav>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">PAUSH INDIA®</a>
+            <ul class="nav-links">
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#qr">Pay</a></li>
+                <li><a href="#" onclick="whatsappOrder()">Order</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section 1 - Clickable CTA -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>PAUSH INDIA®</h1>
-            <p>Perfume House | Kannauj Crafted | Black-Silver Elite</p>
-            <div class="cta-buttons">
-                <a href="shop.html" class="btn-primary">Shop Collection</a>
-                <a href="#" onclick="whatsappOrder()" class="btn-secondary">Quick Order</a>
-            </div>
+    <section class="hero">
+        <div class="container">
+            <h1>Elite Luxury</h1>
+            <p>Perfumes Crafted in Kannauj<br>Power • Sophistication • Long-Lasting</p>
+            <a href="#products" class="btn">Shop Now</a>
+            <a href="#" onclick="whatsappOrder()" class="btn">WhatsApp Order</a>
         </div>
     </section>
 
-    <!-- Featured Products - 6 Cards Clickable -->
-    <section class="featured">
-        <h2>Elite Collection</h2>
-        <div class="product-grid">
-            <div class="product" data-id="1" data-name="Sheer Love" data-price="699">
-                <img src="assets/sheer-love.jpg" alt="Sheer Love">
+    <section id="products" class="products container">
+        <h2>Signature Collection</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1611606066621-8b5f54bdb5ea?w=400&fit=crop" alt="Sheer Love">
                 <h3>Sheer Love</h3>
-                <p>₹699</p>
-                <button class="add-cart">Add to Cart</button>
+                <p class="price">₹699</p>
+                <button class="add-cart" onclick="addToCart('Sheer Love',699)">Add Cart</button>
+                <button class="whatsapp-push" onclick="whatsappProduct('Sheer Love ₹699')">WhatsApp</button>
             </div>
-            <!-- 5 more products same format: Sensual, Poison, Leau Dissey, Oud Noir, Silver Mystique -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598836870558-42b3d80ae9b2?w=400&fit=crop" alt="Sensual">
+                <h3>Sensual</h3>
+                <p class="price">₹699</p>
+                <button class="add-cart" onclick="addToCart('Sensual',699)">Add Cart</button>
+                <button class="whatsapp-push" onclick="whatsappProduct('Sensual ₹699')">WhatsApp</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c119482?w=400&fit=crop" alt="Poison">
+                <h3>Poison</h3>
+                <p class="price">₹699</p>
+                <button class="add-cart" onclick="addToCart('Poison',699)">Add Cart</button>
+                <button class="whatsapp-push" onclick="whatsappProduct('Poison ₹699')">WhatsApp</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1612688598177-6bb7b563f2c3?w=400&fit=crop" alt="Leau Dissey">
+                <h3>Leau Dissey</h3>
+                <p class="price">₹699</p>
+                <button class="add-cart" onclick="addToCart('Leau Dissey',699)">Add Cart</button>
+                <button class="whatsapp-push" onclick="whatsappProduct('Leau Dissey ₹699')">WhatsApp</button>
+            </div>
         </div>
     </section>
 
-    <!-- UPI QR Section -->
-    <section class="payment">
-        <img src="assets/upi-qr.jpg" alt="UPI QR">
-        <p>Scan to Pay | Razorpay Also Available</p>
+    <section id="qr" class="qr-section container">
+        <h2>Payment</h2>
+        <img src="https://via.placeholder.com/300x300/0a0a0a/c0c0c0?text=UPI+QR+Upload+Your+QR" alt="UPI QR" style="margin:2rem 0;">
+        <p>Scan UPI QR | COD Available | Razorpay Coming Soon</p>
+        <br><button class="btn" onclick="cartCheckout()">View Cart & Pay</button>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Paush India | Kannauj + Farrukhabad | WhatsApp: 9151176462</p>
+    <footer class="container">
+        <p>© Paush India 2015-2026 | Kannauj Crafted | WhatsApp: 9151176462</p>
     </footer>
 
-    <script src="assets/script.js"></script>
+    <script>
+        // WhatsApp Functions
+        function whatsappProduct(product) {
+            window.open(`https://wa.me/9151176462?text=Hi, ${product} order karna hai. Available?`, '_blank');
+        }
+        function whatsappOrder() {
+            window.open(`https://wa.me/9151176462?text=Paush India order enquiry`, '_blank');
+        }
+        
+        // Cart Simple
+        let cart = [];
+        function addToCart(name, price) {
+            cart.push({name, price});
+            alert(`${name} added to cart! Total items: ${cart.length}`);
+        }
+        function cartCheckout() {
+            if(cart.length) {
+                const total = cart.reduce((sum, item) => sum + item.price, 0);
+                alert(`Cart: ${cart.length} items | Total: ₹${total}\nWhatsApp pe confirm karo!`);
+                whatsappOrder();
+            } else {
+                alert('Cart empty! Shop first.');
+            }
+        }
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+            });
+        });
+    </script>
 </body>
 </html>
 
