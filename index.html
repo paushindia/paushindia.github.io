@@ -1,434 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paush India - Premium Perfumes from Kannauj Since 2015</title>
-    <meta name="description" content="Discover luxury Sheer Love, Sensual, Poison, L'Eau d'Issey perfumes. Long-lasting, alcohol-free from Kannauj. WhatsApp order: 9151176462. UPI: piyushc458@oksbi">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="logo.png" type="image/png">
-    <style>
-        :root {
-            --dark-bg: #0a0a0a;
-            --gold: #D4AF37;
-            --gold-light: #F5E8C7;
-            --accent: #1a1a2e;
-            --text-light: #f0f0f0;
-            --shadow: 0 20px 40px rgba(0,0,0,0.6);
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { 
-            font-family: 'Poppins', sans-serif; 
-            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--accent) 100%); 
-            color: var(--text-light); 
-            line-height: 1.6; 
-            overflow-x: hidden; 
-        }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        
-        /* Header */
-        header { 
-            position: fixed; 
-            top: 0; 
-            width: 100%; 
-            background: rgba(10,10,10,0.97); 
-            backdrop-filter: blur(20px); 
-            z-index: 1000; 
-            padding: 1rem 0; 
-            transition: all 0.3s ease; 
-            border-bottom: 1px solid rgba(212,175,55,0.2);
-        }
-        nav { 
-            max-width: 1400px; 
-            margin: 0 auto; 
-            padding: 0 2rem; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-        }
-        .logo { 
-            height: 55px; 
-            width: auto; 
-            transition: filter 0.3s; 
-        }
-        .logo:hover { filter: brightness(1.2) drop-shadow(0 0 10px var(--gold)); }
-        .nav-menu { 
-            display: flex; 
-            gap: 2.5rem; 
-            list-style: none; 
-        }
-        .nav-menu a { 
-            color: var(--text-light); 
-            text-decoration: none; 
-            font-weight: 500; 
-            position: relative; 
-            transition: color 0.3s; 
-        }
-        .nav-menu a:hover { color: var(--gold); }
-        .nav-menu a::after {
-            content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.3s;
-        }
-        .nav-menu a:hover::after { width: 100%; }
-        .whatsapp-header { 
-            background: linear-gradient(45deg, #25D366, #128C7E); 
-            color: white; 
-            padding: 0.7rem 2rem; 
-            border-radius: 50px; 
-            text-decoration: none; 
-            font-weight: 600; 
-            box-shadow: 0 5px 15px rgba(37,211,102,0.4);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* Hero */
-        .hero { 
-            height: 100vh; 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg'); 
-            background-position: center; 
-            background-size: cover; 
-            background-attachment: fixed;
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            color: white; 
-            position: relative; 
-        }
-        .hero h1 { 
-            font-size: clamp(3.5rem, 10vw, 7rem); 
-            margin-bottom: 1.5rem; 
-            text-shadow: 0 0 30px rgba(212,175,55,0.8); 
-            letter-spacing: 0.1em;
-        }
-        .hero p { 
-            font-size: clamp(1.2rem, 4vw, 1.8rem); 
-            max-width: 700px; 
-            margin-bottom: 2.5rem; 
-            opacity: 0.95;
-        }
-        .cta { 
-            background: linear-gradient(45deg, var(--gold), #F5E8C7); 
-            color: var(--dark-bg); 
-            padding: 1.2rem 3rem; 
-            border-radius: 50px; 
-            font-size: 1.3rem; 
-            font-weight: 700; 
-            text-decoration: none; 
-            transition: all 0.4s; 
-            box-shadow: 0 10px 30px rgba(212,175,55,0.4);
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { box-shadow: 0 10px 30px rgba(212,175,55,0.4); }
-            50% { box-shadow: 0 10px 40px rgba(212,175,55,0.7); }
-            100% { box-shadow: 0 10px 30px rgba(212,175,55,0.4); }
-        }
-        .cta:hover { transform: translateY(-5px) scale(1.05); }
+<title>Paush India® | Ultra Pro Max Luxury Perfume Brand</title>
 
-        /* Sections */
-        section { padding: 6rem 2rem; }
-        .container { max-width: 1400px; margin: 0 auto; }
-        .section-title { 
-            text-align: center; 
-            font-size: clamp(2.5rem, 6vw, 4rem); 
-            margin-bottom: 4rem; 
-            position: relative; 
-        }
-        .section-title::after {
-            content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background: var(--gold);
-        }
+<meta name="description" content="Paush India® – Ultra Pro Max luxury Indian perfume brand. Premium fragrances at ₹699. Order via WhatsApp.">
+<meta name="keywords" content="Paush India perfume, luxury perfume india, premium fragrance brand">
+<meta name="author" content="Paush India">
 
-        /* Products */
-        .products { background: rgba(26,26,46,0.8); }
-        .product-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-            gap: 2.5rem; 
-        }
-        .product-card { 
-            background: rgba(255,255,255,0.08); 
-            border-radius: 25px; 
-            overflow: hidden; 
-            transition: all 0.4s ease; 
-            backdrop-filter: blur(15px); 
-            border: 1px solid rgba(212,175,55,0.15);
-            position: relative;
-        }
-        .product-card:hover { 
-            transform: translateY(-15px) rotateX(5deg); 
-            box-shadow: var(--shadow); 
-        }
-        .product-img { 
-            width: 100%; 
-            height: 350px; 
-            object-fit: cover; 
-            transition: transform 0.4s;
-        }
-        .product-card:hover .product-img { transform: scale(1.05); }
-        .product-info { 
-            padding: 2rem; 
-            text-align: center; 
-        }
-        .product h3 { 
-            font-size: 1.8rem; 
-            margin-bottom: 1rem; 
-            color: var(--gold-light);
-        }
-        .price { 
-            font-size: 2.5rem; 
-            color: var(--gold); 
-            font-weight: 800; 
-            margin-bottom: 1rem;
-        }
-        .add-cart { 
-            background: var(--gold); 
-            color: var(--dark-bg); 
-            border: none; 
-            padding: 1rem 2rem; 
-            border-radius: 50px; 
-            font-weight: 600; 
-            cursor: pointer; 
-            transition: all 0.3s;
-        }
-        .add-cart:hover { transform: scale(1.05); }
+<link rel="icon" href="assets/logo.png">
 
-        /* Payment */
-        .payment { 
-            background: linear-gradient(135deg, var(--accent), var(--dark-bg)); 
-            text-align: center; 
-        }
-        .payment-content { max-width: 600px; margin: 0 auto; }
-        .upi-qr { 
-            max-width: 280px; 
-            height: auto; 
-            border: 3px solid var(--gold); 
-            border-radius: 20px; 
-            margin: 2rem 0; 
-            box-shadow: 0 10px 30px rgba(212,175,55,0.3);
-        }
-        .steps { 
-            display: grid; 
-            gap: 1rem; 
-            margin-top: 2rem; 
-            text-align: left; 
-        }
-        .step { 
-            background: rgba(255,255,255,0.05); 
-            padding: 1rem; 
-            border-radius: 15px; 
-            border-left: 4px solid var(--gold);
-        }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-        /* Floating WhatsApp */
-        .floating-whatsapp { 
-            position: fixed; 
-            bottom: 30px; 
-            right: 30px; 
-            background: linear-gradient(45deg, #25D366, #128C7E); 
-            color: white; 
-            width: 70px; 
-            height: 70px; 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 2rem; 
-            box-shadow: var(--shadow); 
-            cursor: pointer; 
-            z-index: 1001; 
-            transition: all 0.3s; 
-            animation: bounce 2s infinite;
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-        .floating-whatsapp:hover { 
-            transform: scale(1.15) translateY(-5px); 
-        }
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
 
-        /* Footer */
-        footer { 
-            background: var(--accent); 
-            text-align: center; 
-            padding: 3rem 2rem; 
-            border-top: 1px solid rgba(212,175,55,0.2);
-        }
-        .social-links { margin: 1.5rem 0; }
-        .social-links a { color: var(--gold); font-size: 1.5rem; margin: 0 1rem; transition: color 0.3s; }
-        .social-links a:hover { color: var(--gold-light); }
+body{
+  background:#050505;
+  color:#fff;
+  font-family:'Poppins',sans-serif;
+  overflow-x:hidden;
+}
 
-        /* Mobile */
-        @media (max-width: 768px) { 
-            .nav-menu { 
-                position: fixed; 
-                top: 100%; 
-                left: 0; 
-                width: 100%; 
-                background: rgba(10,10,10,0.98); 
-                flex-direction: column; 
-                padding: 2rem; 
-                gap: 1rem; 
-                transform: translateY(-100%); 
-                transition: transform 0.3s; 
-            }
-            .nav-menu.active { transform: translateY(0); }
-            .hamburger { display: block; font-size: 2rem; cursor: pointer; }
-            header { padding: 1rem; }
-            .hero { background-attachment: scroll; }
-            section { padding: 4rem 1rem; }
-        }
+/* NAV */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(20px);
+  z-index:999;
+}
 
-        /* Smooth scroll */
-        html { scroll-padding-top: 100px; }
-    </style>
+nav img{
+  width:190px;
+}
+
+nav a{
+  color:#eee;
+  text-decoration:none;
+  margin-left:35px;
+  font-weight:300;
+  transition:0.3s;
+}
+nav a:hover{color:#c9a24d}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+  background:
+  linear-gradient(to right,rgba(0,0,0,0.85),rgba(0,0,0,0.3)),
+  url("https://images.unsplash.com/photo-1615634260167-c8cdede054de") center/cover;
+}
+
+.hero-box{
+  max-width:650px;
+}
+
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:68px;
+  line-height:1.05;
+}
+
+.hero span{color:#c9a24d}
+
+.hero p{
+  margin-top:20px;
+  color:#ccc;
+  font-size:18px;
+  line-height:1.8;
+}
+
+.hero .cta{
+  display:inline-block;
+  margin-top:32px;
+  padding:18px 48px;
+  background:#c9a24d;
+  color:#000;
+  border-radius:60px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* STRIP */
+.strip{
+  text-align:center;
+  padding:40px;
+  background:#0e0e0e;
+  letter-spacing:4px;
+  font-size:14px;
+  color:#aaa;
+}
+
+/* LOGO CENTER */
+.logo-center{
+  text-align:center;
+  padding:120px 0 80px;
+}
+.logo-center img{
+  width:320px;
+}
+
+/* STORY */
+.story{
+  padding:100px 8%;
+  text-align:center;
+}
+.story h2{
+  font-family:'Playfair Display',serif;
+  font-size:44px;
+}
+.story p{
+  max-width:900px;
+  margin:30px auto;
+  color:#bbb;
+  line-height:1.9;
+  font-size:17px;
+}
+
+/* PRODUCTS */
+.products{
+  padding:110px 8%;
+}
+.products h2{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  margin-bottom:70px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.card{
+  background:#101010;
+  border-radius:28px;
+  padding:26px;
+  transition:0.5s;
+}
+.card:hover{
+  transform:translateY(-18px);
+  box-shadow:0 30px 60px rgba(0,0,0,0.8);
+}
+
+.card img{
+  width:100%;
+  border-radius:22px;
+}
+
+.card h3{
+  margin-top:20px;
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+}
+
+.card p{
+  margin-top:8px;
+  color:#aaa;
+}
+
+.price{
+  font-size:24px;
+  color:#c9a24d;
+  margin:14px 0;
+}
+
+.buy{
+  display:block;
+  margin-top:12px;
+  padding:16px;
+  text-align:center;
+  background:#c9a24d;
+  color:#000;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* PAYMENT */
+.payment{
+  padding:110px 8%;
+  background:#0b0b0b;
+  text-align:center;
+}
+.payment h2{
+  font-family:'Playfair Display',serif;
+  font-size:40px;
+}
+.payment p{
+  margin-top:14px;
+  color:#bbb;
+}
+.payment a{
+  display:inline-block;
+  margin-top:30px;
+  padding:18px 46px;
+  background:#1a73e8;
+  color:#fff;
+  border-radius:60px;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  padding:60px;
+  text-align:center;
+  font-size:14px;
+  color:#777;
+}
+</style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <img src="logo.png" alt="Paush India - Premium Perfumes" class="logo" onerror="this.outerHTML='<h2 style=&quot;font-family:Playfair Display;font-size:2.5rem;color:var(--gold);margin:0;font-weight:700;&quot;>PAUSH INDIA</h2>'">
-            <ul class="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#payment">Order</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="https://wa.me/9151176462?text=Hi%20Paush%20India%2C%20I%20want%20to%20order" class="whatsapp-header">📱 Order</a>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-        </nav>
-    </header>
 
-    <!-- Hero -->
-    <section id="hero" class="hero">
-        <h1>Timeless Luxury<br><span style="color:var(--gold);">from Kannauj</span></h1>
-        <p>Premium alcohol-free perfumes handcrafted since 2015 in India's perfume capital. Experience scents that last forever.</p>
-        <a href="#products" class="cta">Discover Collection</a>
-    </section>
+<nav>
+<img src="assets/logo.png">
+<div>
+<a href="#">Home</a>
+<a href="#">Fragrances</a>
+<a href="https://instagram.com/paushindiaofficial">Instagram</a>
+</div>
+</nav>
 
-    <!-- Products -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2 class="section-title">Signature Collection</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="sheer-love.jpg" alt="Sheer Love Eau de Parfum" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1611606065811-8a47b08cf436?w=400&fit=crop'">
-                    <div class="product-info">
-                        <h3>Sheer Love</h3>
-                        <div class="price">₹699</div>
-                        <button class="add-cart" onclick="orderWhatsApp('Sheer Love')">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="sensual.jpg" alt="Sensual Night" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1590736969950-e9b7d1a26810?w=400&fit=crop'">
-                    <div class="product-info">
-                        <h3>Sensual</h3>
-                        <div class="price">₹699</div>
-                        <button class="add-cart" onclick="orderWhatsApp('Sensual')">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="poison.jpg" alt="Poison Intense" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1574169208507-84376144848b?w=400&fit=crop'">
-                    <div class="product-info">
-                        <h3>Poison</h3>
-                        <div class="price">₹699</div>
-                        <button class="add-cart" onclick="orderWhatsApp('Poison')">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="leau-dissey.jpg" alt="L'Eau d'Issey Pure" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1587014611670-fd8dd8dee1aa?w=400&fit=crop'">
-                    <div class="product-info">
-                        <h3>L'Eau d'Issey</h3>
-                        <div class="price">₹699</div>
-                        <button class="add-cart" onclick="orderWhatsApp('L\'Eau d\'Issey')">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+<div class="hero-box">
+<h1>ULTRA <span>PRO MAX</span><br>PERFUME HOUSE</h1>
+<p>Paush India® is not just a fragrance brand — it is an identity of power, dominance and luxury crafted for the elite.</p>
+<a class="cta" href="https://wa.me/919151176462">Order on WhatsApp</a>
+</div>
+</section>
 
-    <!-- Payment/Order -->
-    <section id="payment" class="payment">
-        <div class="container">
-            <div class="payment-content">
-                <h2 class="section-title">Easy Ordering</h2>
-                <p style="font-size:1.3rem; margin-bottom:2rem;">Pay via UPI or COD. 100% Secure.</p>
-                <div>
-                    <h3 style="color:var(--gold);">UPI ID: piyushc458@oksbi</h3>
-                    <img src="upi-qr.jpg" alt="Scan UPI QR Code - Paush India" class="upi-qr" onerror="this.src='https://via.placeholder.com/280x280/D4AF37/1a1a2e?text=📱+Scan+UPI+QR+%0A+₹699/order+%0Apiyushc458@oksbi&font=Poppins'" style="filter: drop-shadow(0 5px 15px rgba(212,175,55,0.5));">
-                    <div class="steps">
-                        <div class="step">1️⃣ Scan QR or send <strong>₹699</strong> per bottle to UPI ID</div>
-                        <div class="step">2️⃣ Take payment screenshot</div>
-                        <div class="step">3️⃣ WhatsApp screenshot + product name to <strong>9151176462</strong></div>
-                        <div class="step">4️⃣ Get instant confirmation & tracking 🚚</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="strip">NEXT LEVEL START • WORLD CLASS BRAND</div>
 
-    <!-- Floating WhatsApp -->
-    <div class="floating-whatsapp" onclick="orderWhatsApp()">
-        💬
-    </div>
+<div class="logo-center">
+<img src="assets/logo.png">
+</div>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <h3>Paush India</h3>
-            <p>Crafted in Kannauj, India – Perfume Capital Since 2015</p>
-            <div class="social-links">
-                <a href="https://wa.me/9151176462">📱 WhatsApp</a>
-                <a href="tel:+919151176462">📞 Call</a>
-            </div>
-            <p>&copy; 2026 Paush India. All rights reserved. | Premium Fragrances from Varanasi</p>
-        </div>
-    </footer>
+<section class="story">
+<h2>The World of Paush</h2>
+<p>Born in India, designed for the world. Paush India blends rare notes, bold design and unmatched longevity to create fragrances that command attention wherever you go.</p>
+</section>
 
-    <script>
-        // WhatsApp Order Function
-        function orderWhatsApp(product = '') {
-            let msg = `Hi Paush India! 👋\n\n`;
-            if (product) msg += `I want to order: ${product} (₹699)\n\n`;
-            msg += `Payment Details:\nUPI: piyushc458@oksbi\n\nPlease confirm availability & shipping! 📦`;
-            window.open(`https://wa.me/9151176462?text=${encodeURIComponent(msg)}`, '_blank');
-        }
+<section class="products">
+<h2>Ultra Signature Collection</h2>
+<div class="grid">
 
-        // Mobile Menu Toggle
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        }
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
+<h3>Royal Oud</h3>
+<p>Dark • Powerful • Elite</p>
+<div class="price">₹699</div>
+<a class="buy" href="https://wa.me/919151176462">Buy Now</a>
+</div>
 
-        // Header Scroll Effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(10,10,10,0.98)';
-                header.style.padding = '0.8rem 0';
-            } else {
-                header.style.background = 'rgba(10,10,10,0.97)';
-                header.style.padding = '1rem 0';
-            }
-        });
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1d1">
+<h3>Midnight Musk</h3>
+<p>Sensual • Intense</p>
+<div class="price">₹699</div>
+<a class="buy" href="https://wa.me/919151176462">Buy Now</a>
+</div>
 
-        // Smooth Animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        });
-        document.querySelectorAll('.product-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(50px)';
-            card.style.transition = 'all 0.6s ease';
-            observer.observe(card);
-        });
-    </script>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
+<h3>French Citrus</h3>
+<p>Fresh • Premium</p>
+<div class="price">₹699</div>
+<a class="buy" href="https://wa.me/919151176462">Buy Now</a>
+</div>
+
+</div>
+</section>
+
+<section class="payment">
+<h2>Pay the Elite Way</h2>
+<p>UPI • COD • WhatsApp Order</p>
+<a href="upi://pay?pa=piyushc458@oksbi&pn=Paush%20India&am=699&cu=INR">
+Pay ₹699 via UPI
+</a>
+</section>
+
+<footer>
+© 2026 Paush India® – ULTRA PRO MAX BRAND  
+<br>Luxury | Power | Presence
+</footer>
+
 </body>
 </html>
-
