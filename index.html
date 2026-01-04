@@ -4,270 +4,211 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Paush India – Luxury Perfume Brand | Premium Fragrances</title>
+<title>Paush India – Luxury Perfume Brand</title>
 
-<meta name="description" content="Paush India – Luxury Indian perfume brand. Premium long-lasting fragrances inspired by Kannauj. Order via WhatsApp.">
-<meta name="keywords" content="Paush India, luxury perfume, Indian perfume brand, Kannauj attar, premium perfume">
+<meta name="description" content="Paush India – Premium luxury perfumes for men & women. Order via WhatsApp. Pay via UPI or COD.">
+<meta name="keywords" content="Paush India perfume, luxury perfume india, buy perfume online">
 <meta name="author" content="Paush India">
 
-<!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo.png">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    font-family:'Montserrat',sans-serif;
-    background:#0a0a0a;
-    color:#fff;
-}
-
-/* LOGO SECTION */
-.logo-section{
-    min-height:80vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    background:#000;
-}
-
-.logo-section img{
-    width:420px;
-    max-width:90%;
-}
-
-.logo-section h1{
-    margin-top:20px;
-    font-family:'Playfair Display',serif;
-    letter-spacing:4px;
-    color:#d4af37;
+  background:#0b0b0b;
+  color:#fff;
 }
 
 /* HEADER */
 header{
-    position:sticky;
-    top:0;
-    background:#000;
-    padding:15px 0;
-    border-bottom:1px solid #d4af3733;
+  text-align:center;
+  padding:40px 20px;
 }
 
-nav{
-    display:flex;
-    justify-content:center;
-    gap:30px;
+header img{
+  width:240px;
+  max-width:90%;
 }
 
-nav a{
-    text-decoration:none;
-    color:#fff;
-    font-weight:600;
+header h1{
+  margin-top:20px;
+  font-size:32px;
+  letter-spacing:2px;
 }
 
-nav a:hover{
-    color:#d4af37;
+header p{
+  color:#ccc;
+  margin-top:10px;
 }
 
-/* HERO */
-.hero{
-    padding:80px 20px;
-    text-align:center;
-    background:linear-gradient(to bottom,#000,#111);
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  margin:10px;
+  padding:14px 26px;
+  border-radius:30px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:bold;
 }
 
-.hero h2{
-    font-family:'Playfair Display',serif;
-    font-size:42px;
-    color:#d4af37;
-}
-
-.hero p{
-    max-width:700px;
-    margin:20px auto;
-    opacity:0.9;
-}
+.whatsapp{background:#25D366;}
+.instagram{background:#E1306C;}
+.upi{background:#1a73e8;}
+.cod{background:#444;}
 
 /* PRODUCTS */
 .products{
-    padding:80px 20px;
-    background:#111;
+  padding:50px 20px;
+  text-align:center;
 }
 
 .products h2{
-    text-align:center;
-    font-family:'Playfair Display',serif;
-    color:#d4af37;
-    margin-bottom:50px;
+  font-size:28px;
+  margin-bottom:30px;
 }
 
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    max-width:1100px;
-    margin:auto;
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
 }
 
-.product{
-    background:#000;
-    border-radius:20px;
-    padding:20px;
-    text-align:center;
-    border:1px solid #d4af3722;
+.card{
+  background:#151515;
+  width:280px;
+  border-radius:15px;
+  padding:20px;
 }
 
-.product img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    border-radius:15px;
+.card img{
+  width:100%;
+  border-radius:10px;
 }
 
-.product h3{
-    margin:15px 0;
-    color:#d4af37;
+.card h3{
+  margin:15px 0 5px;
+}
+
+.card p{
+  color:#bbb;
 }
 
 .price{
-    font-size:26px;
-    font-weight:bold;
-    margin-bottom:15px;
+  font-size:22px;
+  margin:10px 0;
 }
 
-.whatsapp-btn{
-    display:inline-block;
-    background:#25D366;
-    color:#000;
-    padding:12px 25px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:700;
+.buy{
+  background:#c79b2a;
+  color:#000;
+  padding:12px;
+  border-radius:25px;
+  text-decoration:none;
+  display:block;
+  margin-top:10px;
 }
 
-/* ABOUT */
-.about{
-    padding:80px 20px;
-    text-align:center;
+/* PAYMENT */
+.payment{
+  padding:40px 20px;
+  text-align:center;
+  background:#111;
 }
 
-.about h2{
-    font-family:'Playfair Display',serif;
-    color:#d4af37;
-    margin-bottom:20px;
+.payment h2{
+  margin-bottom:15px;
 }
 
-.about p{
-    max-width:800px;
-    margin:auto;
-    opacity:0.9;
+.upi-box{
+  background:#1c1c1c;
+  display:inline-block;
+  padding:20px;
+  border-radius:15px;
+  margin-top:15px;
 }
 
 /* FOOTER */
 footer{
-    background:#000;
-    padding:40px 20px;
-    text-align:center;
-    border-top:1px solid #d4af3733;
-}
-
-footer a{
-    color:#d4af37;
-    text-decoration:none;
-}
-
-/* FLOATING WHATSAPP */
-.floating-whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    padding:15px 18px;
-    border-radius:50%;
-    font-size:24px;
-    text-decoration:none;
-    color:#000;
+  text-align:center;
+  padding:30px;
+  color:#777;
+  font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
-<section class="logo-section">
-    <img src="assets/logo.png" alt="Paush India Logo">
-    <h1>PAUSH INDIA</h1>
-</section>
-
-<!-- NAV -->
 <header>
-<nav>
-    <a href="#">Home</a>
-    <a href="#products">Shop</a>
-    <a href="#about">About</a>
-    <a href="https://instagram.com/paushindiaofficial" target="_blank">Instagram</a>
-</nav>
+  <img src="assets/logo.png" alt="Paush India Logo">
+  <h1>PAUSH INDIA</h1>
+  <p>Luxury Perfume Brand</p>
+
+  <a class="btn whatsapp" href="https://wa.me/919151176462?text=Hi%20I%20want%20to%20order%20Paush%20India%20Perfume">Order on WhatsApp</a>
+  <a class="btn instagram" href="https://instagram.com/paushindiaofficial" target="_blank">Instagram</a>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <h2>Luxury Perfumes Crafted in India</h2>
-    <p>Premium long-lasting fragrances inspired by Kannauj. Pure, bold & unforgettable.</p>
-</section>
+<section class="products">
+<h2>Our Best Sellers</h2>
 
-<!-- PRODUCTS -->
-<section class="products" id="products">
-<h2>Our Signature Perfumes</h2>
+<div class="cards">
 
-<div class="product-grid">
-
-<div class="product">
-    <img src="assets/perfume1.jpg">
-    <h3>Royal Oud</h3>
-    <div class="price">₹699</div>
-    <a class="whatsapp-btn" href="https://wa.me/919151176462?text=I want to order Royal Oud Perfume">Order on WhatsApp</a>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1d1">
+<h3>Royal Oud</h3>
+<p>Long lasting premium fragrance</p>
+<div class="price">₹699</div>
+<a class="buy" href="https://wa.me/919151176462?text=I%20want%20Royal%20Oud%20Perfume">Buy Now</a>
 </div>
 
-<div class="product">
-    <img src="assets/perfume2.jpg">
-    <h3>Amber Musk</h3>
-    <div class="price">₹699</div>
-    <a class="whatsapp-btn" href="https://wa.me/919151176462?text=I want to order Amber Musk Perfume">Order on WhatsApp</a>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
+<h3>Midnight Musk</h3>
+<p>Bold & luxury scent</p>
+<div class="price">₹699</div>
+<a class="buy" href="https://wa.me/919151176462?text=I%20want%20Midnight%20Musk%20Perfume">Buy Now</a>
 </div>
 
-<div class="product">
-    <img src="assets/perfume3.jpg">
-    <h3>White Rose</h3>
-    <div class="price">₹699</div>
-    <a class="whatsapp-btn" href="https://wa.me/919151176462?text=I want to order White Rose Perfume">Order on WhatsApp</a>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
+<h3>French Citrus</h3>
+<p>Fresh daily wear perfume</p>
+<div class="price">₹699</div>
+<a class="buy" href="https://wa.me/919151176462?text=I%20want%20French%20Citrus%20Perfume">Buy Now</a>
 </div>
 
 </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-<h2>About Paush India</h2>
-<p>
-Paush India is a premium Indian perfume brand delivering luxury fragrances crafted with passion.
-Inspired by Kannauj’s heritage, our perfumes are long-lasting, bold and unforgettable.
-</p>
+<section class="payment">
+<h2>Payment Options</h2>
+<p>UPI / COD Available</p>
+
+<div class="upi-box">
+<p><strong>UPI ID:</strong></p>
+<p style="font-size:18px;">piyushc458@oksbi</p>
+
+<a class="btn upi" href="upi://pay?pa=piyushc458@oksbi&pn=Paush%20India&am=699&cu=INR">
+Pay ₹699 via UPI
+</a>
+
+<p style="margin-top:10px;">Cash on Delivery also available</p>
+</div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-<p>© 2026 Paush India</p>
-<p>
-Instagram: <a href="https://instagram.com/paushindiaofficial" target="_blank">@paushindiaofficial</a>
-</p>
+© 2026 Paush India · All Rights Reserved  
+<br>
+NEXT LEVEL START 🚀
 </footer>
-
-<!-- FLOATING WHATSAPP -->
-<a class="floating-whatsapp" href="https://wa.me/919151176462" target="_blank">💬</a>
 
 </body>
 </html>
