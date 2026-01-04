@@ -1,214 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Paush India – Luxury Perfume Brand</title>
-
-<meta name="description" content="Paush India – Premium luxury perfumes for men & women. Order via WhatsApp. Pay via UPI or COD.">
-<meta name="keywords" content="Paush India perfume, luxury perfume india, buy perfume online">
-<meta name="author" content="Paush India">
-
-<link rel="icon" href="assets/logo.png">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-  background:#0b0b0b;
-  color:#fff;
-}
-
-/* HEADER */
-header{
-  text-align:center;
-  padding:40px 20px;
-}
-
-header img{
-  width:240px;
-  max-width:90%;
-}
-
-header h1{
-  margin-top:20px;
-  font-size:32px;
-  letter-spacing:2px;
-}
-
-header p{
-  color:#ccc;
-  margin-top:10px;
-}
-
-/* BUTTONS */
-.btn{
-  display:inline-block;
-  margin:10px;
-  padding:14px 26px;
-  border-radius:30px;
-  text-decoration:none;
-  color:#fff;
-  font-weight:bold;
-}
-
-.whatsapp{background:#25D366;}
-.instagram{background:#E1306C;}
-.upi{background:#1a73e8;}
-.cod{background:#444;}
-
-/* PRODUCTS */
-.products{
-  padding:50px 20px;
-  text-align:center;
-}
-
-.products h2{
-  font-size:28px;
-  margin-bottom:30px;
-}
-
-.cards{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
-}
-
-.card{
-  background:#151515;
-  width:280px;
-  border-radius:15px;
-  padding:20px;
-}
-
-.card img{
-  width:100%;
-  border-radius:10px;
-}
-
-.card h3{
-  margin:15px 0 5px;
-}
-
-.card p{
-  color:#bbb;
-}
-
-.price{
-  font-size:22px;
-  margin:10px 0;
-}
-
-.buy{
-  background:#c79b2a;
-  color:#000;
-  padding:12px;
-  border-radius:25px;
-  text-decoration:none;
-  display:block;
-  margin-top:10px;
-}
-
-/* PAYMENT */
-.payment{
-  padding:40px 20px;
-  text-align:center;
-  background:#111;
-}
-
-.payment h2{
-  margin-bottom:15px;
-}
-
-.upi-box{
-  background:#1c1c1c;
-  display:inline-block;
-  padding:20px;
-  border-radius:15px;
-  margin-top:15px;
-}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:30px;
-  color:#777;
-  font-size:14px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paush India - Premium Perfumes from Kannauj Since 2015</title>
+    <meta name="description" content="Discover luxury, long-lasting, alcohol-free perfumes crafted in Kannauj. Paush India offers skin-friendly fragrances for men, women & unisex. Shop now!">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --dark-bg: #0a0a0a;
+            --light-gold: #F5E8C7;
+            --accent: #1a1a1a;
+            --text-light: #f0f0f0;
+            --shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: var(--dark-bg); color: var(--text-light); line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        header { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.95); backdrop-filter: blur(10px); z-index: 1000; transition: all 0.3s; }
+        nav { max-width: 1400px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 2rem; font-weight: 700; background: linear-gradient(45deg, var(--primary-gold), var(--light-gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .nav-menu a { color: var(--text-light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-menu a:hover { color: var(--primary-gold); }
+        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 2rem; }
+        .hero h1 { font-size: 4rem; color: var(--primary-gold); margin-bottom: 1rem; }
+        .hero p { font-size: 1.5rem; max-width: 600px; margin-bottom: 2rem; }
+        .cta { background: var(--primary-gold); color: var(--dark-bg); padding: 1rem 2rem; border: none; font-size: 1.1rem; font-weight: 600; border-radius: 50px; cursor: pointer; transition: transform 0.3s; text-decoration: none; display: inline-block; }
+        .cta:hover { transform: scale(1.05); }
+        section { padding: 5rem 2rem; max-width: 1400px; margin: 0 auto; }
+        .products { background: var(--accent); }
+        .products h2 { text-align: center; font-size: 3rem; margin-bottom: 3rem; color: var(--primary-gold); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .product-card { background: rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; backdrop-filter: blur(10px); border: 1px solid rgba(212,175,55,0.2); }
+        .product-card:hover { transform: translateY(-10px); box-shadow: var(--shadow); }
+        .product-img { height: 250px; background: linear-gradient(45deg, #333, #555); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: var(--primary-gold); }
+        .product-info { padding: 1.5rem; text-align: center; }
+        .product-name { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .sale-price { font-size: 1.8rem; font-weight: 700; color: var(--primary-gold); }
+        .mrp { text-decoration: line-through; color: #888; font-size: 1rem; }
+        .badge { display: inline-block; background: var(--primary-gold); color: var(--dark-bg); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .feature { text-align: center; }
+        .feature i { font-size: 3rem; color: var(--primary-gold); margin-bottom: 1rem; }
+        .testimonials { background: var(--dark-bg); }
+        .testimonials h2 { text-align: center; font-size: 3rem; margin-bottom: 3rem; color: var(--primary-gold); }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .testimonial { background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 20px; text-align: center; }
+        .whatsapp { position: fixed; bottom: 2rem; right: 2rem; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow); cursor: pointer; z-index: 1000; transition: transform 0.3s; }
+        .whatsapp:hover { transform: scale(1.1); }
+        footer { background: var(--accent); padding: 3rem 2rem 1rem; text-align: center; }
+        .footer-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        @media (max-width: 768px) { .nav-menu { display: none; } .hero h1 { font-size: 2.5rem; } .grid { grid-template-columns: 1fr; } }
+    </style>
 </head>
-
 <body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Paush India</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Why Paush</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <img src="assets/logo.png" alt="Paush India Logo">
-  <h1>PAUSH INDIA</h1>
-  <p>Luxury Perfume Brand</p>
+    <section id="home" class="hero">
+        <h1>Premium Perfumes from Kannauj</h1>
+        <p>Since 2015, discover long-lasting, alcohol-free luxury crafted with authentic attars. Elevate your scent game.</p>
+        <a href="#products" class="cta">Shop Bestsellers</a>
+    </section>
 
-  <a class="btn whatsapp" href="https://wa.me/919151176462?text=Hi%20I%20want%20to%20order%20Paush%20India%20Perfume">Order on WhatsApp</a>
-  <a class="btn instagram" href="https://instagram.com/paushindiaofficial" target="_blank">Instagram</a>
-</header>
+    <section id="products" class="products">
+        <h2>Bestsellers</h2>
+        <div class="grid">
+            <div class="product-card">
+                <div class="product-img"><i class="fas fa-spray-can"></i></div>
+                <div class="product-info">
+                    <span class="badge">Bestseller</span>
+                    <h3 class="product-name">Oud Royale Unisex - 100ml</h3>
+                    <div class="sale-price">₹599</div>
+                    <div class="mrp">₹999</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><i class="fas fa-gift"></i></div>
+                <div class="product-info">
+                    <span class="badge">Bestseller</span>
+                    <h3 class="product-name">Luxury Gift Set Men - 4x20ml</h3>
+                    <div class="sale-price">₹549</div>
+                    <div class="mrp">₹849</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><i class="fas fa-spray-can"></i></div>
+                <div class="product-info">
+                    <span class="badge">Bestseller</span>
+                    <h3 class="product-name">CEO Man - 100ml</h3>
+                    <div class="sale-price">₹499</div>
+                    <div class="mrp">₹899</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><i class="fas fa-gift"></i></div>
+                <div class="product-info">
+                    <span class="badge">Bestseller</span>
+                    <h3 class="product-name">Unisex Gift Set - 4x20ml</h3>
+                    <div class="sale-price">₹549</div>
+                    <div class="mrp">₹849</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><i class="fas fa-spray-can"></i></div>
+                <div class="product-info">
+                    <span class="badge">Bestseller</span>
+                    <h3 class="product-name">Rose Elixir Woman - 100ml</h3>
+                    <div class="sale-price">₹599</div>
+                    <div class="mrp">₹999</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><i class="fas fa-spray-can"></i></div>
+                <div class="product-info">
+                    <span class="badge">Bestseller</span>
+                    <h3 class="product-name">KLUB Man - 100ml</h3>
+                    <div class="sale-price">₹549</div>
+                    <div class="mrp">₹799</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="products">
-<h2>Our Best Sellers</h2>
+    <section id="features" class="features">
+        <div class="feature">
+            <i class="fas fa-paw"></i>
+            <h3>Cruelty Free</h3>
+            <p>Kindness in every bottle from Kannauj's finest attars.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-seedling"></i>
+            <h3>Authentic Fragrances</h3>
+            <p>Premium oils blended for 12+ hour longevity.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-crown"></i>
+            <h3>Affordable Luxury</h3>
+            <p>High-end quality at unbeatable prices since 2015.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-venus-mars"></i>
+            <h3>Gender Neutral</h3>
+            <p>Perfumes for all, skin-friendly & alcohol-free.</p>
+        </div>
+    </section>
 
-<div class="cards">
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"Paush India has raised the bar for premium attars. Amazing quality at great prices!"</p>
+                <cite>- Piyush M., Varanasi</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Best luxury perfumes from Kannauj. Long-lasting and skin-friendly."</p>
+                <cite>- Simran K.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Never thought affordable could mean this good. CEO Man is my daily go-to."</p>
+                <cite>- Rahul S.</cite>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1d1">
-<h3>Royal Oud</h3>
-<p>Long lasting premium fragrance</p>
-<div class="price">₹699</div>
-<a class="buy" href="https://wa.me/919151176462?text=I%20want%20Royal%20Oud%20Perfume">Buy Now</a>
-</div>
+    <footer id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>Paush India</h3>
+                <p>Premium Perfumes since 2015<br>Kannauj Crafted, Luxury Delivered</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#features">About</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>info@paushindia.com<br>+91-XXXXXXXXXX<br>paushindia.com</p>
+            </div>
+        </div>
+        <p>&copy; 2026 Paush India. All rights reserved. Manufactured in Kannauj, India.</p>
+    </footer>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
-<h3>Midnight Musk</h3>
-<p>Bold & luxury scent</p>
-<div class="price">₹699</div>
-<a class="buy" href="https://wa.me/919151176462?text=I%20want%20Midnight%20Musk%20Perfume">Buy Now</a>
-</div>
+    <div class="whatsapp" onclick="window.open('https://wa.me/91YOURNUMBER', '_blank')">
+        <i class="fab fa-whatsapp"></i>
+    </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
-<h3>French Citrus</h3>
-<p>Fresh daily wear perfume</p>
-<div class="price">₹699</div>
-<a class="buy" href="https://wa.me/919151176462?text=I%20want%20French%20Citrus%20Perfume">Buy Now</a>
-</div>
-
-</div>
-</section>
-
-<section class="payment">
-<h2>Payment Options</h2>
-<p>UPI / COD Available</p>
-
-<div class="upi-box">
-<p><strong>UPI ID:</strong></p>
-<p style="font-size:18px;">piyushc458@oksbi</p>
-
-<a class="btn upi" href="upi://pay?pa=piyushc458@oksbi&pn=Paush%20India&am=699&cu=INR">
-Pay ₹699 via UPI
-</a>
-
-<p style="margin-top:10px;">Cash on Delivery also available</p>
-</div>
-</section>
-
-<footer>
-© 2026 Paush India · All Rights Reserved  
-<br>
-NEXT LEVEL START 🚀
-</footer>
-
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').style.background = `rgba(10,10,10,${Math.min(0.95, 0.3 + window.scrollY / 500)})`;
+        });
+    </script>
 </body>
 </html>
+
