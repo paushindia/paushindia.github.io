@@ -1,26 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Product – Paush India</title>
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products ₹699 | Paush India® Luxury Collection</title>
+    <meta name="description" content="Complete Paush India collection. 12+ luxury perfumes ₹699 each. Royal Oud, Sheer Love, Poison & more from Kannauj.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Same CSS as shop.html - copy from there -->
+    <style>/* Shop.html ka same CSS yahan paste karo (upper wale message se)*/</style>
 </head>
 <body>
+    <!-- Same Header as shop.html -->
+    <header class="header">
+        <img src="assets/images/logo.png" alt="Paush India" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="products.html">All Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.instagram.com/paushindiaofficial">Instagram</a>
+        </nav>
+    </header>
 
-<div class="product-detail">
-<img src="assets/images/p1.jpg">
+    <section class="hero">
+        <h1>Complete Collection</h1>
+        <p>12+ Luxury Fragrances | All ₹699</p>
+    </section>
 
-<div>
-<h1>Royal Oud</h1>
-<p>₹699</p>
-<p>Luxury woody fragrance with royal depth.</p>
+    <section class="products">
+        <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 3rem; margin-bottom: 3rem; color: #D4AF37;">All Paush India Fragrances</h2>
+        
+        <div class="product-grid">
+            <!-- 12 Complete Products - Same as shop.html but full list -->
+            <div class="product-card">
+                <img src="assets/images/perfume1.jpg" alt="Sheer Love" class="product-img">
+                <div class="product-info">
+                    <h3>Sheer Love</h3>
+                    <p>Floral elegance for everyday</p>
+                    <div class="price">₹699</div>
+                    <button class="whatsapp-btn" onclick="orderWhatsApp('Sheer Love')"><i class="fab fa-whatsapp"></i> Order</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 to 12 same format -->
+            <!-- Copy perfume2.jpg to perfume12.jpg cards from shop.html code -->
+            
+            <!-- Example Product 12 -->
+            <div class="product-card">
+                <img src="assets/images/perfume12.jpg" alt="Midnight Desire" class="product-img">
+                <div class="product-info">
+                    <h3>Midnight Desire</h3>
+                    <p>Dark vanilla seduction</p>
+                    <div class="price">₹699</div>
+                    <button class="whatsapp-btn" onclick="orderWhatsApp('Midnight Desire')"><i class="fab fa-whatsapp"></i> Order</button>
+                </div>
+            </div>
+        </div>
 
-<a href="checkout.html" class="gold-btn">Buy Now</a>
-</div>
-</div>
+        <!-- UPI Section same as shop.html -->
+        <div class="upi-checkout">
+            <h3>Pay ₹699 via UPI</h3>
+            <img src="assets/upi-qr.jpg" alt="UPI QR" class="upi-qr">
+            <p>WhatsApp: +91 9151176462</p>
+        </div>
+    </section>
 
-<h3>Customer Reviews</h3>
-<div class="review">⭐⭐⭐⭐⭐ Amazing luxury feel</div>
-<div class="review">⭐⭐⭐⭐ Smells premium</div>
-
+    <!-- Same Footer & Script as shop.html -->
 </body>
 </html>
