@@ -1,19 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact | Paush India</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Paush India® | Piyush Products - Luxury Perfumes</title>
+    <meta name="description" content="Contact Paush India by Piyush Products. IndiaMart & TradeIndia verified wholesaler. Farrukhabad, Uttar Pradesh. GST: 09AFWPM7379D1ZN. Bulk perfume orders.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: linear-gradient(135deg, #000 0%, #111 30%, #1a1a1a 70%, #000 100%); 
+            color: #f5f5f5; 
+            line-height: 1.7;
+        }
+        
+        /* BLACK-GOLD HEADER */
+        .header { 
+            background: rgba(0,0,0,0.98); 
+            backdrop-filter: blur(20px); 
+            border-bottom: 2px solid #D4AF37; 
+            padding: 1.2rem 5%; 
+            position: fixed; width: 100%; top: 0; z-index: 1000; 
+            box-shadow: 0 8px 32px rgba(212,175,55,0.2);
+        }
+        .logo { height: 50px; filter: drop-shadow(0 0 20px #D4AF37); }
+        nav { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
+        nav a { color: #e5e5e5; text-decoration: none; font-weight: 500; padding: 0.7rem 1.2rem; border-radius: 30px; transition: all 0.4s; position: relative; }
+        nav a:hover { background: rgba(212,175,55,0.15); color: #D4AF37 !important; box-shadow: 0 0 25px rgba(212,175,55,0.5); transform: translateY(-2px); }
+        
+        /* HERO */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.85)), url('assets/images/contact-bg.jpg'); 
+            height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; 
+            position: relative; overflow: hidden;
+        }
+        .hero h1 { 
+            font-family: 'Playfair Display', serif; font-size: 5.5rem; 
+            background: linear-gradient(45deg, #FFD700, #D4AF37, #B8860B); 
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+            filter: drop-shadow(0 0 50px rgba(212,175,55,0.9)); animation: goldGlow 3s ease-in-out infinite alternate;
+        }
+        @keyframes goldGlow { from { filter: drop-shadow(0 0 30px #D4AF37); } to { filter: drop-shadow(0 0 50px #FFD700); } }
+        
+        /* CONTACT CARDS */
+        .contact-container { max-width: 1400px; margin: 0 auto; padding: 6rem 3rem; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 3rem; margin-bottom: 5rem; }
+        .contact-card { 
+            background: linear-gradient(145deg, #1a1a1a, #111); 
+            padding: 3rem 2.5rem; border-radius: 25px; text-align: center; 
+            border: 2px solid rgba(212,175,55,0.2); transition: all 0.5s; position: relative; overflow: hidden;
+        }
+        .contact-card::before { 
+            content: ''; position: absolute; top: 0; left: -150%; width: 150%; height: 100%; 
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.1), transparent); 
+            transition: left 0.7s; 
+        }
+        .contact-card:hover { transform: translateY(-15px); border-color: #D4AF37; box-shadow: 0 30px 60px rgba(212,175,55,0.3); }
+        .contact-card:hover::before { left: 100%; }
+        .contact-icon { font-size: 5rem; color: #D4AF37; margin-bottom: 1.5rem; filter: drop-shadow(0 0 20px #D4AF37); }
+        .contact-card h3 { font-family: 'Playfair Display'; font-size: 2rem; margin-bottom: 1rem; color: #FFD700; }
+        
+        /* B2B SECTION */
+        .b2b-section { 
+            background: linear-gradient(135deg, #111, #1a1a1a); 
+            padding: 4rem 3rem; border-radius: 30px; margin: 4rem 0; 
+            border: 2px solid rgba(212,175,55,0.3); text-align: center;
+        }
+        .b2b-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 2.5rem; }
+        .b2b-card { 
+            background: linear-gradient(145deg, #222, #181818); padding: 2.5rem; border-radius: 20px; 
+            border: 1px solid rgba(212,175,55,0.4); transition: all 0.4s; cursor: pointer;
+        }
+        .b2b-card:hover { 
+            background: linear-gradient(145deg, #D4AF37, #FFD700); color: #000; 
+            transform: translateY(-10px) scale(1.02); box-shadow: 0 25px 50px rgba(212,175,55,0.6);
+        }
+        
+        /* GOOGLE MAPS */
+        .maps-section h2 { font-family: 'Playfair Display'; font-size: 3rem; color: #D4AF37; text-align: center; margin-bottom: 2.5rem; }
+        #map { height: 450px; width: 100%; border-radius: 25px; border: 3px solid #D4AF37; box-shadow: 0 25px 50px rgba(212,175,55,0.4); }
+        
+        /* FORM */
+        .form-section { background: linear-gradient(135deg, #1a1a1a, #111); padding: 4rem; border-radius: 30px; margin: 4rem 0; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+        .form-group label { display: block; margin-bottom: 0.8rem; color: #D4AF37; font-weight: 500; }
+        .form-group input, .form-group textarea { 
+            width: 100%; padding: 1.2rem; background: linear-gradient(145deg, #2a2a2a, #1f1f1f); 
+            border: 2px solid #333; border-radius: 15px; color: #fff; font-size: 1rem; transition: all 0.3s;
+        }
+        .form-group input:focus, .form-group textarea:focus { 
+            border-color: #D4AF37; box-shadow: 0 0 25px rgba(212,175,55,0.4); background: #222;
+        }
+        .submit-btn { 
+            background: linear-gradient(45deg, #D4AF37, #FFD700); 
+            border: 3px solid #D4AF37; color: #000; padding: 1.5rem 4rem; 
+            border-radius: 50px; font-size: 1.3rem; font-weight: 700; cursor: pointer; 
+            width: 100%; transition: all 0.4s; grid-column: 1 / -1; margin-top: 1rem;
+        }
+        .submit-btn:hover { 
+            background: linear-gradient(45deg, #FFD700, #D4AF37); 
+            box-shadow: 0 20px 40px rgba(212,175,55,0.7); transform: translateY(-5px);
+        }
+        
+        .footer { 
+            background: linear-gradient(to bottom, #000, #111); 
+            padding: 3rem 5%; text-align: center; 
+            border-top: 3px solid #D4AF37;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3.5rem !important; }
+            .form-grid { grid-template-columns: 1fr !important; }
+            .contact-grid { grid-template-columns: 1fr !important; }
+            nav { gap: 1rem !important; justify-content: center !important; }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <img src="assets/images/logo.png" alt="Paush India" class="logo">
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a>
+            <a href="products.html"><i class="fas fa-list"></i> Products</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="https://www.instagram.com/paushindiaofficial" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </nav>
+    </header>
 
-<header class="header">
-  <img src="assets/logo.png" class="logo">
-</header>
+    <!-- Hero -->
+    <section class="hero">
+        <div>
+            <h1>Contact Us</h1>
+            <p>Piyush Products - Paush India | Verified Wholesaler</p>
+        </div>
+    </section>
 
-<section class="contact">
-  <h2>Contact Us</h2>
-  <p>WhatsApp: +91 9151176462</p>
-</section>
+    <div class="contact-container">
+        <!-- Quick Contacts -->
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                <h3>WhatsApp Business</h3>
+                <p><strong>+91 91511 76462</strong></p>
+                <p>Orders | Inquiries | Bulk</p>
+                <a href="https://wa.me/919151176462?text=Hi%20Paush%20India%2C%20Bulk%20perfume%20inquiry" class="btn-gold">Send Message</a>
+            </div>
 
-</body>
-</html>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Email Business</h3>
+                <p><strong>piyushproducts@gmail.com</strong></p>
+                <p>Trade | Partnership | Export</p>
+            </div>
+
+            <div class="contact-card
+
