@@ -1,122 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Paush India® | Piyush Products - Luxury Perfumes</title>
-    <meta name="description" content="Contact Paush India by Piyush Products. IndiaMart & TradeIndia verified wholesaler. Farrukhabad, Uttar Pradesh. GST: 09AFWPM7379D1ZN. Bulk perfume orders.">
+    <title>Contact Paush India® | Luxury Perfumes Kannauj</title>
+    <meta name="description" content="Contact Paush India perfume brand. IndiaMart, TradeIndia verified. WhatsApp orders, Varanasi location. Premium fragrance inquiries.">
     
+    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Poppins', sans-serif; 
-            background: linear-gradient(135deg, #000 0%, #111 30%, #1a1a1a 70%, #000 100%); 
-            color: #f5f5f5; 
-            line-height: 1.7;
-        }
+        body { font-family: 'Poppins', sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; }
         
-        /* BLACK-GOLD HEADER */
-        .header { 
-            background: rgba(0,0,0,0.98); 
-            backdrop-filter: blur(20px); 
-            border-bottom: 2px solid #D4AF37; 
-            padding: 1.2rem 5%; 
-            position: fixed; width: 100%; top: 0; z-index: 1000; 
-            box-shadow: 0 8px 32px rgba(212,175,55,0.2);
-        }
-        .logo { height: 50px; filter: drop-shadow(0 0 20px #D4AF37); }
-        nav { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
-        nav a { color: #e5e5e5; text-decoration: none; font-weight: 500; padding: 0.7rem 1.2rem; border-radius: 30px; transition: all 0.4s; position: relative; }
-        nav a:hover { background: rgba(212,175,55,0.15); color: #D4AF37 !important; box-shadow: 0 0 25px rgba(212,175,55,0.5); transform: translateY(-2px); }
+        /* Header - Same as other pages */
+        .header { background: rgba(0,0,0,0.95); backdrop-filter: blur(10px); padding: 1rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .logo { height: 40px; }
+        nav { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+        nav a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #D4AF37; }
         
-        /* HERO */
-        .hero { 
-            background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.85)), url('assets/images/contact-bg.jpg'); 
-            height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; 
-            position: relative; overflow: hidden;
-        }
-        .hero h1 { 
-            font-family: 'Playfair Display', serif; font-size: 5.5rem; 
-            background: linear-gradient(45deg, #FFD700, #D4AF37, #B8860B); 
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
-            filter: drop-shadow(0 0 50px rgba(212,175,55,0.9)); animation: goldGlow 3s ease-in-out infinite alternate;
-        }
-        @keyframes goldGlow { from { filter: drop-shadow(0 0 30px #D4AF37); } to { filter: drop-shadow(0 0 50px #FFD700); } }
+        /* Hero */
+        .hero { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/images/contact-bg.jpg'); height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: #D4AF37; margin-bottom: 1rem; }
         
-        /* CONTACT CARDS */
-        .contact-container { max-width: 1400px; margin: 0 auto; padding: 6rem 3rem; }
-        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 3rem; margin-bottom: 5rem; }
-        .contact-card { 
-            background: linear-gradient(145deg, #1a1a1a, #111); 
-            padding: 3rem 2.5rem; border-radius: 25px; text-align: center; 
-            border: 2px solid rgba(212,175,55,0.2); transition: all 0.5s; position: relative; overflow: hidden;
-        }
-        .contact-card::before { 
-            content: ''; position: absolute; top: 0; left: -150%; width: 150%; height: 100%; 
-            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.1), transparent); 
-            transition: left 0.7s; 
-        }
-        .contact-card:hover { transform: translateY(-15px); border-color: #D4AF37; box-shadow: 0 30px 60px rgba(212,175,55,0.3); }
-        .contact-card:hover::before { left: 100%; }
-        .contact-icon { font-size: 5rem; color: #D4AF37; margin-bottom: 1.5rem; filter: drop-shadow(0 0 20px #D4AF37); }
-        .contact-card h3 { font-family: 'Playfair Display'; font-size: 2rem; margin-bottom: 1rem; color: #FFD700; }
+        /* Contact Sections */
+        .contact-container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-bottom: 4rem; }
+        .contact-card { background: #1a1a1a; padding: 2.5rem; border-radius: 20px; text-align: center; transition: transform 0.3s; }
+        .contact-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(212,175,55,0.2); }
+        .contact-icon { font-size: 4rem; color: #D4AF37; margin-bottom: 1.5rem; }
+        .contact-card h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem; color: #D4AF37; }
         
-        /* B2B SECTION */
-        .b2b-section { 
-            background: linear-gradient(135deg, #111, #1a1a1a); 
-            padding: 4rem 3rem; border-radius: 30px; margin: 4rem 0; 
-            border: 2px solid rgba(212,175,55,0.3); text-align: center;
-        }
-        .b2b-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 2.5rem; }
-        .b2b-card { 
-            background: linear-gradient(145deg, #222, #181818); padding: 2.5rem; border-radius: 20px; 
-            border: 1px solid rgba(212,175,55,0.4); transition: all 0.4s; cursor: pointer;
-        }
-        .b2b-card:hover { 
-            background: linear-gradient(145deg, #D4AF37, #FFD700); color: #000; 
-            transform: translateY(-10px) scale(1.02); box-shadow: 0 25px 50px rgba(212,175,55,0.6);
-        }
+        /* B2B Links */
+        .b2b-section { background: #111; padding: 3rem; border-radius: 20px; margin-bottom: 3rem; text-align: center; }
+        .b2b-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .b2b-card { background: #222; padding: 2rem; border-radius: 15px; transition: all 0.3s; }
+        .b2b-card:hover { background: #D4AF37; color: #000; transform: translateY(-5px); }
+        .b2b-card a { color: inherit; text-decoration: none; }
         
-        /* GOOGLE MAPS */
-        .maps-section h2 { font-family: 'Playfair Display'; font-size: 3rem; color: #D4AF37; text-align: center; margin-bottom: 2.5rem; }
-        #map { height: 450px; width: 100%; border-radius: 25px; border: 3px solid #D4AF37; box-shadow: 0 25px 50px rgba(212,175,55,0.4); }
+        /* Google Maps */
+        .maps-section { margin: 4rem 0; }
+        #map { height: 400px; width: 100%; border-radius: 20px; border: 1px solid #333; }
         
-        /* FORM */
-        .form-section { background: linear-gradient(135deg, #1a1a1a, #111); padding: 4rem; border-radius: 30px; margin: 4rem 0; }
-        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
-        .form-group label { display: block; margin-bottom: 0.8rem; color: #D4AF37; font-weight: 500; }
-        .form-group input, .form-group textarea { 
-            width: 100%; padding: 1.2rem; background: linear-gradient(145deg, #2a2a2a, #1f1f1f); 
-            border: 2px solid #333; border-radius: 15px; color: #fff; font-size: 1rem; transition: all 0.3s;
-        }
-        .form-group input:focus, .form-group textarea:focus { 
-            border-color: #D4AF37; box-shadow: 0 0 25px rgba(212,175,55,0.4); background: #222;
-        }
-        .submit-btn { 
-            background: linear-gradient(45deg, #D4AF37, #FFD700); 
-            border: 3px solid #D4AF37; color: #000; padding: 1.5rem 4rem; 
-            border-radius: 50px; font-size: 1.3rem; font-weight: 700; cursor: pointer; 
-            width: 100%; transition: all 0.4s; grid-column: 1 / -1; margin-top: 1rem;
-        }
-        .submit-btn:hover { 
-            background: linear-gradient(45deg, #FFD700, #D4AF37); 
-            box-shadow: 0 20px 40px rgba(212,175,55,0.7); transform: translateY(-5px);
-        }
+        /* Form */
+        .form-section { background: #1a1a1a; padding: 3rem; border-radius: 20px; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; color: #D4AF37; }
+        .form-group input, .form-group textarea { width: 100%; padding: 1rem; background: #333; border: 1px solid #444; border-radius: 10px; color: #fff; font-family: inherit; }
+        .form-group textarea { height: 120px; resize: vertical; }
+        .submit-btn { background: #D4AF37; color: #000; padding: 1.2rem 3rem; border: none; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; width: 100%; transition: all 0.3s; }
+        .submit-btn:hover { background: #FAD02C; transform: translateY(-2px); }
         
-        .footer { 
-            background: linear-gradient(to bottom, #000, #111); 
-            padding: 3rem 5%; text-align: center; 
-            border-top: 3px solid #D4AF37;
-        }
+        .footer { background: #000; padding: 2rem 5%; text-align: center; border-top: 1px solid #333; margin-top: 4rem; }
         
         @media (max-width: 768px) {
-            .hero h1 { font-size: 3.5rem !important; }
-            .form-grid { grid-template-columns: 1fr !important; }
-            .contact-grid { grid-template-columns: 1fr !important; }
-            nav { gap: 1rem !important; justify-content: center !important; }
+            .hero h1 { font-size: 2.5rem; }
+            .contact-grid, .form-grid { grid-template-columns: 1fr; }
+            .b2b-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -125,39 +68,146 @@
     <header class="header">
         <img src="assets/images/logo.png" alt="Paush India" class="logo">
         <nav>
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a>
-            <a href="products.html"><i class="fas fa-list"></i> Products</a>
-            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
-            <a href="https://www.instagram.com/paushindiaofficial" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.instagram.com/paushindiaofficial" target="_blank">Instagram</a>
         </nav>
     </header>
 
     <!-- Hero -->
     <section class="hero">
-        <div>
-            <h1>Contact Us</h1>
-            <p>Piyush Products - Paush India | Verified Wholesaler</p>
-        </div>
+        <h1>Get In Touch</h1>
+        <p>Premium fragrance inquiries | Bulk orders | Partnerships</p>
     </section>
 
+    <!-- Contact Container -->
     <div class="contact-container">
-        <!-- Quick Contacts -->
+        <!-- Quick Contact Grid -->
         <div class="contact-grid">
             <div class="contact-card">
-                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                <h3>WhatsApp Business</h3>
-                <p><strong>+91 91511 76462</strong></p>
-                <p>Orders | Inquiries | Bulk</p>
-                <a href="https://wa.me/919151176462?text=Hi%20Paush%20India%2C%20Bulk%20perfume%20inquiry" class="btn-gold">Send Message</a>
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>WhatsApp Orders</h3>
+                <p>+91 91511 76462</p>
+                <a href="https://wa.me/919151176462?text=Hi%20Paush%20India%2C%20I%20have%20inquiry..." class="btn-gold" style="display: inline-block; padding: 12px 24px; margin-top: 1rem; border-radius: 50px;">Message Now</a>
             </div>
 
             <div class="contact-card">
-                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                <h3>Email Business</h3>
-                <p><strong>piyushproducts@gmail.com</strong></p>
-                <p>Trade | Partnership | Export</p>
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>hello@paushindia.com</p>
+                <p>Bulk orders & collaborations</p>
             </div>
 
-            <div class="contact-card
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>Varanasi, Uttar Pradesh<br>India</p>
+                <p>Perfume Capital - Kannauj Crafted</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Business Hours</h3>
+                <p>Mon-Sat: 10AM - 8PM</p>
+                <p>Sunday: 11AM - 6PM</p>
+            </div>
+        </div>
+
+        <!-- B2B Verified Links -->
+        <div class="b2b-section">
+            <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; color: #D4AF37; margin-bottom: 1rem;">B2B Verified</h2>
+            <p>Trade with confidence - Verified supplier</p>
+            <div class="b2b-grid">
+                <div class="b2b-card">
+                    <a href="https://m.indiamart.com/piyushproducts/" target="_blank">
+                        <i class="fab fa-indiamart" style="font-size: 3rem; color: #FF6B35;"></i>
+                        <h3>IndiaMart</h3>
+                        <p>Piyush Products Verified</p>
+                    </a>
+                </div>
+                <div class="b2b-card">
+                    <a href="https://www.tradeindia.com/piyush-products-9044474/" target="_blank">
+                        <i class="fas fa-certificate" style="font-size: 3rem; color: #007BFF;"></i>
+                        <h3>TradeIndia</h3>
+                        <p>Premium Supplier</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="maps-section">
+            <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 2.5rem; color: #D4AF37; margin-bottom: 2rem;">Find Us</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.123456789!2d83.012345!3d25.345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDIwJzQ3LjIiTiA4M8KwMDEnMDIuNSJF!5e0!3m2!1sen!2sin!4v1736190000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="400" 
+                style="border:0; border-radius: 20px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-section">
+            <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 2.5rem; color: #D4AF37; margin-bottom: 2rem;">Send Message</h2>
+            <form class="form-grid" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="phone">
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" name="subject" placeholder="Bulk order / Partnership / Inquiry">
+                </div>
+                <div class="form-group" style="grid-column: 1 / -1;">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Tell us about your inquiry..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <p style="text-align: center; margin-top: 2rem; opacity: 0.8; font-size: 0.9rem;">
+                Or WhatsApp: <strong>+91 91511 76462</strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div style="margin-bottom: 1rem;">
+            <a href="https://www.instagram.com/paushindiaofficial" style="color: #E1306C; margin: 0 1rem; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919151176462" style="color: #25D366; margin: 0 1rem; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>© 2026 Paush India® | Varanasi, Uttar Pradesh | Kannauj Crafted Luxury</p>
+    </footer>
+
+    <script>
+        // WhatsApp quick message
+        function quickWhatsApp(message) {
+            const whatsappNumber = "919151176462";
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
 
