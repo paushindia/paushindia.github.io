@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout – Paush India</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+}
+body{
+  margin:0;
+  background:#f7f7f7;
+}
+.header{
+  background:#fff;
+  padding:15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  border-bottom:1px solid #eee;
+}
+.header img{
+  height:40px;
+}
+.header h1{
+  font-size:18px;
+  margin:0;
+  font-weight:600;
+}
+.container{
+  max-width:520px;
+  margin:auto;
+  background:#fff;
+  padding:20px;
+}
+.section-title{
+  font-size:16px;
+  font-weight:600;
+  margin:20px 0 10px;
+}
+input,select{
+  width:100%;
+  padding:14px;
+  margin-bottom:12px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:14px;
+}
+.row{
+  display:flex;
+  gap:10px;
+}
+.row input{
+  flex:1;
+}
+.payment-box{
+  border:1px solid #e5e5e5;
+  border-radius:12px;
+  padding:15px;
+  margin-top:10px;
+}
+.upi{
+  background:#f1f8f4;
+  border:1px solid #cde6d8;
+  padding:12px;
+  border-radius:10px;
+  font-size:14px;
+}
+.total{
+  display:flex;
+  justify-content:space-between;
+  font-weight:600;
+  margin:15px 0;
+}
+.button{
+  width:100%;
+  background:#c9a44c;
+  color:#000;
+  padding:16px;
+  border:none;
+  border-radius:14px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+}
+.button:hover{
+  opacity:0.9;
+}
+.footer{
+  text-align:center;
+  font-size:12px;
+  color:#777;
+  margin:15px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="assets/logo.png" alt="Paush India">
+  <h1>Checkout</h1>
+</div>
+
+<div class="container">
+
+  <div class="section-title">Contact Details</div>
+  <input type="tel" id="phone" placeholder="Phone Number">
+  <input type="email" id="email" placeholder="Email Address">
+  <input type="text" id="name" placeholder="Full Name">
+
+  <div class="section-title">Shipping Address</div>
+  <input type="text" id="address" placeholder="House No, Street, Area">
+  <div class="row">
+    <input type="text" id="pincode" placeholder="Pincode">
+    <input type="text" id="city" placeholder="City">
+  </div>
+  <input type="text" id="state" placeholder="State">
+
+  <div class="section-title">Payment Method</div>
+
+  <div class="payment-box">
+    <div class="upi">
+      <strong>UPI Payment</strong><br>
+      Pay to: <b>piyushc458@oksbi</b>
+    </div>
+  </div>
+
+  <div class="total">
+    <span>Total</span>
+    <span>₹699</span>
+  </div>
+
+  <button class="button" onclick="sendWhatsApp()">Place Order on WhatsApp</button>
+
+  <div class="footer">
+    Secure checkout • Paush India ®
+  </div>
+
+</div>
+
+<script>
+function sendWhatsApp(){
+  let phone = document.getElementById("phone").value;
+  let name = document.getElementById("name").value;
+  let address = document.getElementById("address").value;
+  let pincode = document.getElementById("pincode").value;
+  let city = document.getElementById("city").value;
+  let state = document.getElementById("state").value;
+
+  let text = `New Order - Paush India%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Address: ${address}, ${city}, ${state} - ${pincode}%0A
+Product: Premium Perfume%0A
+Price: ₹699%0A
+Payment: UPI (piyushc458@oksbi)`;
+
+  window.location.href =
+  "https://wa.me/919151176462?text=" + text;
+}
+</script>
+
+</body>
+</html>
