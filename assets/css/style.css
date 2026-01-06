@@ -1,64 +1,136 @@
-body {
+/* ======================
+   PAUSH INDIA ROYAL THEME
+====================== */
+
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #111;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
 }
 
+/* BODY */
+body {
+  background: #0b0b0b;
+  color: #e5e5e5;
+}
+
+/* HEADER */
 .header {
-  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 18px 40px;
+  background: #000;
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .logo {
-  height: 70px;
+  height: 60px;
 }
 
 nav a {
-  margin-left: 15px;
+  margin-left: 25px;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: #d4af37;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
 }
 
+nav a:hover {
+  color: #ffffff;
+}
+
+/* HERO */
 .hero {
+  height: 85vh;
+  background: linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 100px 20px;
+}
+
+.hero-overlay {
+  max-width: 800px;
+  padding: 20px;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 64px;
+  letter-spacing: 5px;
+  color: #d4af37;
 }
 
-.btn {
-  background: black;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  display: inline-block;
+.hero h2 {
+  font-size: 28px;
   margin-top: 15px;
+  color: #ffffff;
 }
 
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+/* GOLD BUTTON */
+.btn-gold {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 14px 40px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  transform: scale(1.05);
+}
+
+/* FEATURES */
 .features {
   display: flex;
   justify-content: space-around;
-  padding: 50px;
+  padding: 70px 40px;
+  background: #000;
 }
 
-.products {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
+.feature-box {
+  width: 30%;
+  border: 1px solid #2c2c2c;
+  padding: 30px;
+  text-align: center;
+  background: #0f0f0f;
 }
 
-.product, .checkout {
-  border: 1px solid #ddd;
-  padding: 20px;
+.feature-box h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
-.upi {
-  width: 200px;
-  margin-top: 10px;
+.feature-box p {
+  color: #bdbdbd;
+  font-size: 15px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #000;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #2a2a2a;
 }
