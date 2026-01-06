@@ -1,55 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Paush India | Luxury Perfume House</title>
-
-<!-- SEO -->
-<meta name="description" content="Paush India – Luxury Indian perfume house. Royal fragrances at ₹699.">
-<meta name="keywords" content="Paush India perfume, luxury perfume india">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Paush India – Luxury Perfume House">
-<meta property="og:image" content="assets/images/hero.jpg">
-<meta property="og:type" content="website">
-
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-
-<header class="header">
-  <img src="assets/images/logo.png" class="logo">
-  <nav>
-    <a href="shop.html">Shop</a>
-    <a href="https://www.instagram.com/paushindiaofficial" target="_blank">
-  Instagram
-</a>
-    <a href="checkout.html">Order</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paush India® | Luxury Perfume House from Kannauj</title>
+    <meta name="description" content="Paush India – Premium long-lasting perfumes ₹699. Royal Oud, Sheer Love, Poison, Sensual. Kannauj crafted luxury. Shop now!">
+    <meta name="keywords" content="Paush India, luxury perfume India, Kannauj attar, long lasting fragrance, premium perfume ₹699">
     
-  </nav>
-</header>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Paush India® – Luxury Perfume House">
+    <meta property="og:description" content="Discover Kannauj crafted luxury perfumes ₹699. Shop Sheer Love, Royal Oud & more.">
+    <meta property="og:image" content="assets/images/hero.jpg">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #0a0a0a; color: #fff; overflow-x: hidden; }
+        
+        /* Header */
+        .header { background: rgba(0,0,0,0.95); backdrop-filter: blur(10px); padding: 1rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; transition: all 0.3s; }
+        .header.scrolled { background: rgba(0,0,0,0.98); box-shadow: 0 5px 20px rgba(0,0,0,0.5); }
+        .logo { height: 45px; filter: drop-shadow(0 0 10px rgba(212,175,55,0.5)); }
+        nav { display: flex; justify-content: center; gap: 3rem; }
+        nav a { color: #fff; text-decoration: none; font-weight: 500; position: relative; transition: all 0.3s; }
+        nav a:hover { color: #D4AF37; }
+        nav a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background: #D4AF37; transition: width 0.3s; }
+        nav a:hover::after { width: 100%; }
+        
+        /* Hero */
+        .hero { 
+            height: 100vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/hero.jpg'); 
+            background-size: cover; background-position: center; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; 
+            position: relative; overflow: hidden;
+        }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(212,175,55,0.1), transparent); animation: shimmer 6s infinite; }
+        @keyframes shimmer { 0%, 100% { transform: translateX(-100%); } 50% { transform: translateX(100%); } }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 5rem; color: #D4AF37; margin-bottom: 1rem; text-shadow: 0 0 30px rgba(212,175,55,0.5); animation: fadeInUp 1s ease; }
+        .hero p { font-size: 1.5rem; margin-bottom: 2rem; opacity: 0.9; animation: fadeInUp 1s ease 0.2s both; }
+        .cta-buttons { display: flex; gap: 1rem; animation: fadeInUp 1s ease 0.4s both; }
+        .btn-gold { background: linear-gradient(45deg, #D4AF37, #FAD02C); color: #000; padding: 18px 40px; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: 600; text-decoration: none; box-shadow: 0 10px 30px rgba(212,175,55,0.4); transition: all 0.3s; }
+        .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(212,175,55,0.6); }
+        .btn-whatsapp { background: #25D366; color: white; padding: 18px 40px; border: none; border-radius: 50px; font-size: 1.2rem; text-decoration: none; box-shadow: 0 10px 30px rgba(37,211,102,0.4); transition: all 0.3s; }
+        .btn-whatsapp:hover { background: #128C7E; transform: translateY(-3px); }
+        
+        /* Trust Badges */
+        .trust { display: flex; justify-content: center; gap: 4rem; padding: 4rem 5%; background: #1a1a1a; }
+        .trust-item { text-align: center; opacity: 0; animation: fadeInUp 1s ease forwards; }
+        .trust-item i { font-size: 3rem; color: #D4AF37; margin-bottom: 1rem; }
+        .trust-item:nth-child(1) { animation-delay: 0.1s; }
+        .trust-item:nth-child(2) { animation-delay: 0.2s; }
+        .trust-item:nth-child(3) { animation-delay: 0.3s; }
+        
+        /* Featured Products */
+        .featured { padding: 6rem 5%; max-width: 1400px; margin: 0 auto; }
+        .featured h2 { text-align: center; font-family: 'Playfair Display', serif; font-size: 3.5rem; color: #D4AF37; margin-bottom: 4rem; }
+        .featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .featured-card { background: #1a1a1a; border-radius: 20px; overflow: hidden; transition: all 0.4s; position: relative; }
+        .featured-card:hover { transform: translateY(-15px); box-shadow: 0 25px 50px rgba(212,175,55,0.2); }
+        .featured-img { width: 100%; height: 250px; object-fit: cover; }
+        .featured-info { padding: 2rem; text-align: center; }
+        .featured-name { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .featured-price { font-size: 2rem; color: #D4AF37; font-weight: 700; }
+        
+        /* About */
+        .about { background: linear-gradient(135deg, #1a1a1a, #0f0f0f); padding: 6rem 5%; text-align: center; }
+        .about h2 { font-family: 'Playfair Display', serif; font-size: 3rem; color: #D4AF37; margin-bottom: 2rem; }
+        .about p { font-size: 1.3rem; max-width: 800px; margin: 0 auto 3rem; opacity: 0.9; }
+        
+        /* Footer */
+        .footer { background: #000; padding: 3rem 5% 2rem; text-align: center; border-top: 1px solid #333; }
+        .social-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; }
+        .social-links a { color: #fff; font-size: 1.5rem; transition: all 0.3s; }
+        .social-links a:hover { color: #D4AF37; transform: translateY(-3px); }
+        
+        /* Animations */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { 
+            .hero h1 { font-size: 3rem; } 
+            .cta-buttons { flex-direction: column; align-items: center; }
+            nav { gap: 1rem; font-size: 0.9rem; }
+            .trust { flex-direction: column; gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header class="header" id="header">
+        <img src="assets/images/logo.png" alt="Paush India®" class="logo">
+        <nav>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a>
+            <a href="products.html"><i class="fas fa-list"></i> Products</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="https://www.instagram.com/paushindiaofficial" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </nav>
+    </header>
 
-<section class="hero">
-  <h1>PAUSH INDIA</h1>
-  <p>Luxury Perfume House</p>
-  <a href="shop.html" class="btn-gold">Explore Fragrances</a>
-</section>
-<section class="trust">
-  <div>✔ Long Lasting</div>
-  <div>✔ Luxury Oils</div>
-  <div>✔ Made in India</div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>PAUSH INDIA®</h1>
+        <p>Luxury Perfume House | Kannauj Crafted | ₹699</p>
+        <div class="cta-buttons">
+            <a href="shop.html" class="btn-gold">Shop Collection</a>
+            <a href="https://wa.me/919151176462?text=Hi%2C%20I%20want%20to%20shop%20Paush%20India%20perfumes!" class="btn-whatsapp">Order on WhatsApp</a>
+        </div>
+    </section>
 
-<section class="about">
-  <h2>Why Paush India?</h2>
-  <p>Crafted for those who prefer royalty over noise.</p>
-</section>
+    <!-- Trust Badges -->
+    <section class="trust">
+        <div class="trust-item">
+            <i class="fas fa-clock"></i>
+            <h3>8+ Hours Lasting</h3>
+            <p>Premium oil-based formula</p>
+        </div>
+        <div class="trust-item">
+            <i class="fas fa-crown"></i>
+            <h3>Luxury Oils</h3>
+            <p>Kannauj mastercrafted</p>
+        </div>
+        <div class="trust-item">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>COD Available</h3>
+            <p>Nationwide delivery</p>
+        </div>
+    </section>
 
-<footer>
-© 2026 Paush India
-</footer>
+    <!-- Featured Products -->
+    <section class="featured">
+        <h2>Featured Fragrances</h2>
+        <div class="featured-grid">
+            <div class="featured-card">
+                <img src="assets/images/perfume1.jpg" alt="Sheer Love" class="featured-img" onerror="this.src='https://via.placeholder.com/300x250/1a1a1a/fff?text=Sheer+Love'">
+                <div class="featured-info">
+                    <h3 class="featured-name">Sheer Love</h3>
+                    <div class="featured-price">₹699</div>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="assets/images/perfume2.jpg" alt="Royal Oud" class="featured-img" onerror="this.src='https://via.placeholder.com/300x250/1a1a1a/fff?text=Royal+Oud'">
+                <div class="featured-info">
+                    <h3 class="featured-name">Royal Oud</h3>
+                    <div class="featured-price">₹699</div>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="assets/images/perfume3.jpg" alt="Poison" class="featured-img" onerror="this.src='https://via.placeholder.com/300x250/1a1a1a/fff?text=Poison'">
+                <div class="featured-info">
+                    <h3 class="featured-name">Poison</h3>
+                    <div class="featured-price">₹699</div>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="assets/images/perfume4.jpg" alt="Sensual" class="featured-img" onerror="this.src='https://via.placeholder.com/300x250/1a1a1a/fff?text=Sensual'">
+                <div class="featured-info">
+                    <h3 class="featured-name">Sensual</h3>
+                    <div class="featured-price">₹699</div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="shop.html" class="btn-gold" style="font-size: 1.3rem; padding: 20px 50px;">View All Collection</a>
+        </div>
+    </section>
 
+    <!-- About -->
+    <section class="about">
+        <h2>Why Paush India?</h2>
+        <p>Crafted in the perfume capital of India – Kannauj. For those who demand royalty, power, and unmatched longevity. Every drop tells a story of luxury and tradition.</p>
+        <a href="shop.html" class="btn-gold">Discover Our Story</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/paushindiaofficial" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919151176462" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="contact.html"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>© 2026 Paush India® | Crafted in Kannauj Since 2015 | <strong>COD Available Nationwide</strong></p>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>
+
