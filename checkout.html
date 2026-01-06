@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Checkout | Paush India</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<title>Checkout</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 <body>
 
-<header class="header">
-  <img src="assets/logo.png" class="logo">
-</header>
+<h2>Complete Your Order</h2>
 
-<section class="checkout">
-  <h2>Checkout</h2>
+<button class="gold-btn" onclick="whatsappOrder()">WhatsApp Order</button>
 
-  <input placeholder="Full Name">
-  <input placeholder="Phone Number">
-  <input placeholder="Address">
-  <input placeholder="Pincode">
+<p>UPI: <b>piyushc458@oksbi</b></p>
 
-  <h3>Pay via UPI</h3>
-  <p>UPI ID: <b>piyushc458@oksbi</b></p>
-  <img src="assets/upi-qr.jpg" class="upi">
+<button class="gold-btn" onclick="pay()">Pay Online</button>
 
-  <button class="btn">Order on WhatsApp</button>
-</section>
+<script>
+function whatsappOrder(){
+window.location.href="https://wa.me/919151176462?text=I want to order Royal Oud ₹699";
+}
+
+function pay(){
+var options={
+"key":"RAZORPAY_KEY_HERE",
+"amount":69900,
+"currency":"INR",
+"name":"Paush India",
+"description":"Perfume Order"
+};
+new Razorpay(options).open();
+}
+</script>
 
 </body>
 </html>
