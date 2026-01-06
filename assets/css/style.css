@@ -1,136 +1,57 @@
-/* ======================
-   PAUSH INDIA ROYAL THEME
-====================== */
-
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Georgia", serif;
+body{
+margin:0;
+font-family: 'Helvetica Neue', sans-serif;
+background:#0b0b0b;
+color:#f5f5f5;
 }
 
-/* BODY */
-body {
-  background: #0b0b0b;
-  color: #e5e5e5;
+.lux-header{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:#000;
 }
 
-/* HEADER */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 40px;
-  background: #000;
-  border-bottom: 1px solid #2a2a2a;
+.logo{height:60px;}
+
+nav a{
+color:#d4af37;
+margin:0 10px;
+text-decoration:none;
 }
 
-.logo {
-  height: 60px;
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(#000,#111);
 }
 
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #d4af37;
-  font-weight: 600;
-  letter-spacing: 1px;
-  transition: 0.3s;
+.gold-btn{
+background:#d4af37;
+color:#000;
+padding:12px 25px;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
 }
 
-nav a:hover {
-  color: #ffffff;
+.product-grid{
+display:flex;
+gap:30px;
+padding:40px;
 }
 
-/* HERO */
-.hero {
-  height: 85vh;
-  background: linear-gradient(
-    rgba(0,0,0,0.75),
-    rgba(0,0,0,0.75)
-  );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.card{
+background:#111;
+padding:20px;
+border:1px solid #d4af37;
 }
 
-.hero-overlay {
-  max-width: 800px;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 64px;
-  letter-spacing: 5px;
-  color: #d4af37;
-}
-
-.hero h2 {
-  font-size: 28px;
-  margin-top: 15px;
-  color: #ffffff;
-}
-
-.hero p {
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #cfcfcf;
-}
-
-/* GOLD BUTTON */
-.btn-gold {
-  display: inline-block;
-  margin-top: 35px;
-  padding: 14px 40px;
-  border-radius: 50px;
-  background: linear-gradient(135deg, #d4af37, #f5d76e);
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: 1px;
-  transition: 0.3s;
-}
-
-.btn-gold:hover {
-  transform: scale(1.05);
-}
-
-/* FEATURES */
-.features {
-  display: flex;
-  justify-content: space-around;
-  padding: 70px 40px;
-  background: #000;
-}
-
-.feature-box {
-  width: 30%;
-  border: 1px solid #2c2c2c;
-  padding: 30px;
-  text-align: center;
-  background: #0f0f0f;
-}
-
-.feature-box h3 {
-  color: #d4af37;
-  margin-bottom: 15px;
-  font-size: 22px;
-}
-
-.feature-box p {
-  color: #bdbdbd;
-  font-size: 15px;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 25px;
-  background: #000;
-  color: #777;
-  font-size: 14px;
-  border-top: 1px solid #2a2a2a;
+.review{
+background:#111;
+padding:10px;
+margin:10px;
 }
