@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product, .checkout {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.upi {
+  width: 200px;
+  margin-top: 10px;
+}
